@@ -1,52 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 100" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 76" width="100%" height="100%">
   <defs>
-    <linearGradient id="canikGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="logoEmblemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2d8f4e"/>
       <stop offset="100%" stop-color="#166534"/>
     </linearGradient>
-    <linearGradient id="canikAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="logoRoofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f59e0b"/>
       <stop offset="100%" stop-color="#d97706"/>
     </linearGradient>
-    <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
-    </filter>
   </defs>
 
-  <!-- Emblem Icon: Mimari & Kentsel Dönüşüm Geometrisi -->
-  <g transform="translate(10, 10)" filter="url(#logoShadow)">
-    <rect x="0" y="24" width="22" height="56" rx="4" fill="url(#canikGreenGrad)" opacity="0.9"/>
-    <rect x="26" y="10" width="26" height="70" rx="5" fill="url(#canikGreenGrad)"/>
-    <rect x="56" y="32" width="22" height="48" rx="4" fill="url(#canikGreenGrad)" opacity="0.75"/>
+  <!-- Modern Architectural Emblem -->
+  <g transform="translate(6, 6)">
+    <!-- Sol Bina Bloğu -->
+    <rect x="2" y="20" width="18" height="44" rx="3.5" fill="url(#logoEmblemGrad)" opacity="0.9"/>
+    <!-- Orta Ana Kule Bloğu -->
+    <rect x="23" y="8" width="22" height="56" rx="4" fill="url(#logoEmblemGrad)"/>
+    <!-- Sağ Blok -->
+    <rect x="48" y="26" width="18" height="38" rx="3.5" fill="url(#logoEmblemGrad)" opacity="0.8"/>
     
-    <!-- Architectural roof & drafting apex -->
-    <path d="M 0 24 L 39 0 L 78 32" fill="none" stroke="url(#canikAccentGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Çatı / Mimari Tepe Açısı -->
+    <path d="M 0 20 L 34 0 L 68 26" fill="none" stroke="url(#logoRoofGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
     
-    <!-- Drafting compass cross angle -->
-    <line x1="26" y1="10" x2="52" y2="80" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
+    <!-- Pencereler -->
+    <rect x="28" y="16" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="36" y="16" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="28" y="27" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="36" y="27" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="28" y="38" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="36" y="38" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
     
-    <!-- Windows accents -->
-    <rect x="32" y="20" width="5" height="7" rx="1.5" fill="#ffffff" opacity="0.85"/>
-    <rect x="41" y="20" width="5" height="7" rx="1.5" fill="#ffffff" opacity="0.85"/>
-    <rect x="32" y="33" width="5" height="7" rx="1.5" fill="#ffffff" opacity="0.85"/>
-    <rect x="41" y="33" width="5" height="7" rx="1.5" fill="#ffffff" opacity="0.85"/>
-    <rect x="32" y="46" width="5" height="7" rx="1.5" fill="#ffffff" opacity="0.85"/>
-    <rect x="41" y="46" width="5" height="7" rx="1.5" fill="#ffffff" opacity="0.85"/>
-    
-    <!-- Dynamic renewal swoosh -->
-    <path d="M 6 72 Q 40 86 76 68" fill="none" stroke="url(#canikAccentGrad)" stroke-width="3" stroke-linecap="round"/>
+    <!-- Kentsel Dönüşüm Dinamik Yay Çizgisi -->
+    <path d="M 5 57 Q 34 68 64 54" fill="none" stroke="url(#logoRoofGrad)" stroke-width="3" stroke-linecap="round"/>
   </g>
 
-  <!-- Brand Typography -->
-  <g transform="translate(105, 0)">
-    <text x="0" y="44" font-family="'Poppins', 'Segoe UI', system-ui, sans-serif" font-size="28" font-weight="800" fill="#0f172a" letter-spacing="0.5">
-      CANİK<tspan fill="#166534">OĞLU</tspan> <tspan fill="#d97706">&amp;</tspan> TOPÇU <tspan font-size="22" font-weight="700" fill="#166534">MİMARLIK</tspan>
+  <!-- Kurumsal Tipografi: Net, Kalın ve Çok Okunaklı -->
+  <g transform="translate(86, 0)">
+    <text x="0" y="36" font-family="'Poppins', 'Segoe UI', system-ui, sans-serif" font-size="25" font-weight="800" fill="#0f172a" letter-spacing="0.3">
+      CANİKOĞLU <tspan fill="#d97706">&amp;</tspan> TOPÇU
     </text>
-    <text x="2" y="68" font-family="'Poppins', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" fill="#d97706" letter-spacing="3.5">
-      İNŞAAT &amp; KENTSEL DÖNÜŞÜM
-    </text>
-    <text x="2" y="85" font-family="'Poppins', 'Segoe UI', system-ui, sans-serif" font-size="8.5" font-weight="500" fill="#64748b" letter-spacing="1.2">
-      MİMARİ TASARIM • MÜTEAHHİTLİK • ANAHTAR TESLİM • PEYZAJ
+    <text x="1" y="58" font-family="'Poppins', 'Segoe UI', system-ui, sans-serif" font-size="14.5" font-weight="700" fill="#166534" letter-spacing="2.8">
+      MİMARLIK <tspan fill="#64748b" font-weight="600" font-size="12.5" letter-spacing="1.5">&amp; İNŞAAT A.Ş.</tspan>
     </text>
   </g>
 </svg>
