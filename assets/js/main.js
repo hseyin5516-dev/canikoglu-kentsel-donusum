@@ -1,7 +1,8 @@
 /**
- * CANİKOĞLU İNŞAAT & KENTSEL DÖNÜŞÜM
+ * CANİKOĞLU & TOPÇU MİMARLIK
+ * İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ.
  * Ana JavaScript Dosyası (main.js)
- * Hesaplama Motoru, Proje Filtresi, Lightbox ve Form Entegrasyonları
+ * Hesaplama Motoru (B 3 Sınıfı Proje: 33.900 TL/m²), Şantiye Portföyü ve Sosyal Destekler
  */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -50,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // 2. İNTERAKTİF MALİYET & YARISI BİZDEN DEVLET DESTEĞİ HESAPLAMA MOTORU
+  // Müşteri Talimatı: "B 3 sınıfı proje için Maliyet 33.900 TL" (Çevre ve Şehircilik Bakanlığı III. Sınıf B Grubu Standartları)
   const calcAreaInput = document.getElementById('calcArea');
   const calcAreaRange = document.getElementById('calcAreaRange');
   const calcAreaDisplay = document.getElementById('calcAreaDisplay');
@@ -61,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const resTotalKredi = document.getElementById('resTotalKredi');
   const resTotalSupport = document.getElementById('resTotalSupport');
   const resNetUnitCost = document.getElementById('resNetUnitCost');
+  const resB3UnitCost = document.getElementById('resB3UnitCost');
 
   // Sayı formatlayıcı (TL)
   function formatMoney(amount) {
@@ -82,12 +86,17 @@ document.addEventListener('DOMContentLoaded', function () {
       calcAreaDisplay.textContent = new Intl.NumberFormat('tr-TR').format(area);
     }
 
-    // 2026-2027 Çevre ve Şehircilik Bakanlığı standartlarında yaklaşık lüks C35/40 radye temel m² inşaat birim maliyeti
-    const baseCostPerM2 = 25000; 
-    let estimatedTotalCost = area * baseCostPerM2 * typeMultiplier;
+    // B 3 Sınıfı Yapı (III. Sınıf B Grubu Konut) Resmi Kentsel Dönüşüm Taban Maliyeti: 33.900 TL/m²
+    const baseCostPerM2 = 33900;
+    const currentM2Cost = baseCostPerM2 * typeMultiplier;
+    let estimatedTotalCost = area * currentM2Cost;
+
+    if (resB3UnitCost) {
+      resB3UnitCost.textContent = formatMoney(currentM2Cost) + " / m²";
+    }
 
     // "Yarısı Bizden" Kampanyası Resmi Destek Tutarları (2026/2027)
-    // Daire başı: 875.000 TL Hibe (Geri Ödemesiz) + 875.000 TL Kredi (Düşük Faizli)
+    // Daire başı: 875.000 TL Hibe (Geri Ödemesiz) + 875.000 TL Kredi (Düşük Faizli) = 1.750.000 TL
     const hibePerUnit = 875000;
     const krediPerUnit = 875000;
 
@@ -140,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (formArea) formArea.value = area;
       if (formUnits) formUnits.value = units;
       if (formNote) {
-        formNote.value = `Hesaplama Aracı Verisi: ${area} m² inşaat alanı, ${units} bağımsız bölüm için Yarısı Bizden destekli kentsel dönüşüm keşif ve teklifi talep ediyorum.`;
+        formNote.value = `Hesaplama Aracı Verisi: ${area} m² B 3 Sınıfı proje (33.900 TL/m² tabanlı), ${units} daire için Yarısı Bizden destekli kentsel dönüşüm keşif ve teklifi talep ediyorum.`;
       }
 
       // Başvuru modalını veya bölümünü aç/odakla
@@ -180,90 +189,90 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Proje Detay & Lightbox Verileri
+  // Müşterinin Bildirdiği Gerçek Proje ve Şantiye Verileri
   const projectDetails = {
     'proje-1': {
-      title: 'Canikoğlu Park Konutları - Kentsel Dönüşüm Projesi',
-      location: 'İstanbul / Bağcılar - Güneşli',
+      title: 'Esenyurt Kentsel Dönüşüm & Rezidans Blokları',
+      location: 'İstanbul / Esenyurt',
       image: 'assets/images/projects/proje-1-konut-bloklari.jpg',
-      badge: 'Kaba İnşaat Devam Ediyor (%65)',
+      badge: 'Kule Vinç & Betonarme Kaba Yapı',
       badgeClass: 'status-ongoing',
-      scope: 'Depreme riskli 4 adet eski apartman bloğunun yıkılarak yerine C35/40 betonarme ve radye temel ile modern yaşam sitesi inşası.',
+      scope: 'Esenyurt bölgesinde kentsel dönüşüm kapsamında riskli binaların yıkılarak yerine kule vinçler, C35/40 dayanımlı betonarme ve radye temel ile inşa edilen çok katlı modern konut projesi.',
       specs: [
-        { label: 'İnşaat Alanı', val: '14.500 m²' },
-        { label: 'Bağımsız Bölüm', val: '124 Daire + 8 Ticari Dükkan' },
-        { label: 'Yapı Sistemi', val: 'Radye Jeneral Temel + Tünel Kalıp' },
-        { label: 'Sosyal Alan', val: '2 Kat Kapalı Otopark + Peyzaj & Park' }
+        { label: 'Lokasyon', val: 'Esenyurt / İstanbul' },
+        { label: 'Yapı Sınıfı', val: 'B 3 Sınıfı Betonarme' },
+        { label: 'Donatı', val: 'Kule Vinç & Tünel Kalıp' },
+        { label: 'Sosyal Alan', val: 'Kapalı Otopark & Peyzaj' }
       ]
     },
     'proje-2': {
-      title: 'Marmara Vizyon Blokları - Anahtar Teslim Yapım',
-      location: 'İstanbul / Bahçelievler - Güngören',
+      title: 'Marmara Vizyon Şantiye Sahası & Kaba Yapı',
+      location: 'İstanbul / Güngören - Bahçelievler',
       image: 'assets/images/projects/proje-2-santiye-kaba-yapi.jpg',
       badge: 'Şantiye Kaba İmalat Aşaması',
       badgeClass: 'status-ongoing',
-      scope: 'Ada bazlı kentsel dönüşüm taahhüt projesi. Zemin iyileştirme, ağır iş makineleri ve kule vinçlerle yüksek güvenlik standartlarında devam eden şantiye sahamız.',
+      scope: 'Ada bazlı kentsel dönüşüm taahhüdümüz kapsamında zemin iyileştirmesi, ağır iş makineleri (Daewoo ekskavatör, vinçler) ve yüksek güvenlik standartlarında devam eden şantiye sahamız.',
       specs: [
-        { label: 'İnşaat Alanı', val: '22.000 m²' },
-        { label: 'Blok Sayısı', val: '4 Blok (Zemin + 12 Kat)' },
-        { label: 'Beton Sınıfı', val: 'C35/40 Hazır Beton & B420C Çelik' },
+        { label: 'Proje Tipi', val: 'Kentsel Dönüşüm Taahhüt' },
+        { label: 'Makine Parkı', val: 'Daewoo Ekskavatör & Vinçler' },
+        { label: 'Beton Sınıfı', val: 'C35/40 Hazır Beton & B420C' },
         { label: 'Teslim Modeli', val: 'A\'dan Z\'ye Anahtar Teslim' }
       ]
     },
     'proje-3': {
-      title: 'Modern Şehir Konutları - Dış Cephe & İnce İşçilik',
-      location: 'İstanbul / Bakırköy - Kartaltepe',
+      title: 'Kartal Kız Öğrenci Yurdu Binası',
+      location: 'İstanbul / Kartal',
       image: 'assets/images/projects/proje-3-cephe-ve-ince-isler.jpg',
-      badge: 'İnce İşler & İskân Aşaması',
+      badge: 'Giriş Alüminyum Doğrama & İnce İşler',
       badgeClass: 'status-inspection',
-      scope: 'Tasarımından mimarisine Canikoğlu İnşaat imzası taşıyan projede A+ taşyünü cephe mantolaması, kompozit kaplama ve lüks iç dekorasyon imalatları.',
+      scope: 'Kartal Kız Yurdu Binası projesinde; bina giriş alüminyum doğramaları, iskele üzeri A1 sınıfı taşyünü ısı ve ses mantolaması, kompozit cephe ve lüks iç ince işçilik imalatları.',
       specs: [
-        { label: 'Toplam Daire', val: '48 Lüks Rezidans' },
-        { label: 'Isı & Ses Yalıtımı', val: '150 kg/m³ Taşyünü A1 Yanmaz' },
-        { label: 'Doğrama & Cam', val: 'Konfor Isıcamlı 76mm PVC Sistem' },
-        { label: 'İç Mimari', val: 'Özel Tasarım Lake Mutfak & Banyo' }
+        { label: 'Proje Adı', val: 'Kartal Kız Yurdu Binası' },
+        { label: 'Cephe İmalatı', val: 'Giriş Alüminyum Doğrama' },
+        { label: 'Yalıtım', val: '150 kg/m³ A1 Taşyünü Mantolama' },
+        { label: 'Durum', val: 'İnce İşçilik & Teslim Aşaması' }
       ]
     },
     'proje-4': {
-      title: 'Endüstriyel Çelik Yapı & Yangın Güvenlik Merdiveni',
-      location: 'Kocaeli / Gebze Organize Sanayi Bölgesi',
+      title: 'Cerrahpaşa Tıp Fakültesi Hastane Çelik Yapı Projesi',
+      location: 'İstanbul / Fatih - Cerrahpaşa',
       image: 'assets/images/projects/proje-4-celik-konstruksiyon.jpg',
-      badge: 'Başarıyla Teslim Edildi',
+      badge: 'Hastanede Başarıyla Teslim Edildi',
       badgeClass: 'status-completed',
-      scope: 'Ağır sanayi tesisinde deprem ve yangın yönetmeliklerine %100 uyumlu, statik hesaplamaları mühendislerimizce yapılmış ağır çelik yangın kaçış merdiveni ve taşıyıcı konstrüksiyon imalatı.',
+      scope: 'Cerrahpaşa Hastanesi projesinde; deprem ve yangın güvenlik yönetmeliklerine %100 uyumlu ağır yapısal çelik taşıyıcı bina, acil çıkış ve yangın kaçış merdiveni imalatı.',
       specs: [
-        { label: 'Çelik Ağırlığı', val: '45 Ton Yapısal Çelik (S275/S355)' },
-        { label: 'Yükseklik', val: '24 Metre (6 Kat Çıkış)' },
-        { label: 'Kaplama', val: 'Sıcak Daldırma Galvaniz + Epoksi Astar' },
-        { label: 'Denetim', val: 'Röntgen & Ultrasonik Kaynak Testi' }
+        { label: 'Sağlık Kurumu', val: 'Cerrahpaşa Hastanesi' },
+        { label: 'Yapı Sistemi', val: 'Ağır Yapısal Çelik İskelet' },
+        { label: 'İmalat Kapsamı', val: 'Yangın Güvenlik Merdiveni & Katlar' },
+        { label: 'Kalite Testi', val: 'Galvaniz Kaplama & Röntgen Testi' }
       ]
     },
     'proje-5': {
-      title: 'Spor & Yaşam Kompleksi - Prekast Tribün & Çatı',
+      title: 'Başakşehir 17.000 Kişilik Stadyum & Spor Kompleksi',
       location: 'İstanbul / Başakşehir',
       image: 'assets/images/projects/proje-5-tribun-stadyum-yapi.jpg',
-      badge: 'Tamamlandı & Hizmete Açıldı',
+      badge: '17.000 Kişilik Kapasite — Tamamlandı',
       badgeClass: 'status-completed',
-      scope: 'Özel statik mühendislik çözümü gerektiren geniş açıklıklı çelik uzay kafes çatı sistemi, prekast betonarme tribün basamakları ve çevre altyapı işleri.',
+      scope: 'Başakşehir 17.000 kişilik stadyum projesinde; özel statik mühendislik çözümü gerektiren 72 metre açıklıklı çelik uzay kafes çatı sistemi, prekast betonarme tribün basamakları ve çevre altyapı işleri.',
       specs: [
-        { label: 'Kapasite', val: '12.500 Seyirci Kapasitesi' },
-        { label: 'Çatı Konstrüksiyon', val: '72 Metre Açıklıklı Çelik Kafes Kiriş' },
-        { label: 'Prekast İmalat', val: '3.400 Adet Yüksek Mukavemetli Eleman' },
-        { label: 'Teslim Süresi', val: '14 Ayda Eksiksiz Teslim' }
+        { label: 'Kapasite', val: '17.000 Kişilik Stadyum' },
+        { label: 'Lokasyon', val: 'Başakşehir / İstanbul' },
+        { label: 'Çatı Sistemi', val: '72 Metre Çelik Uzay Kafes' },
+        { label: 'Tribün', val: 'Prekast Betonarme İmalat' }
       ]
     },
     'proje-6': {
-      title: 'Vadi Rezidans - Derin Kazı, Fore Kazık & İksa Güçlendirme',
+      title: 'Zeytinburnu Vadi Rezidans Derin Kazı, Fore Kazık & İksa',
       location: 'İstanbul / Zeytinburnu - Kazlıçeşme',
       image: 'assets/images/projects/proje-6-derin-kazi-iksa-hafriyat.jpg',
-      badge: 'Zemin İksa Tamamlandı',
+      badge: 'Zemin İksa & Kazık Tamamlandı',
       badgeClass: 'status-completed',
-      scope: 'Sıfır risk prensibiyle çevre binaların güvenliğini sağlayan -18 metre derin hafriyat kazısı, donatılı fore kazıklar, öngermeli ankraj iksa perdeleri ve zemin drenaj sistemleri.',
+      scope: 'Çevre binaların güvenliğini sıfır risk prensibiyle koruyan -18 metre derin hafriyat kazısı, 320 adet donatılı fore kazık, öngermeli ankraj iksa perdeleri ve zemin güçlendirme çalışmaları.',
       specs: [
-        { label: 'Kazı Hacmi', val: '48.000 m³ Derin Hafriyat' },
-        { label: 'Fore Kazık', val: '320 Adet (80cm Çap, 22m Derinlik)' },
-        { label: 'Ankraj', val: '4 Kademeli Kendinden Delen Ankraj' },
-        { label: 'Ekipman', val: 'Daewoo 340 LCV & Kule İksa Makineleri' }
+        { label: 'Kazı Derinliği', val: '-18 Metre Derin Hafriyat' },
+        { label: 'Fore Kazık', val: '320 Adet Donatılı Kazık' },
+        { label: 'İksa Sistemi', val: 'Öngermeli Ankraj Perdeleri' },
+        { label: 'Makine Parkı', val: 'Daewoo 340 LCV & Ağır İksa' }
       ]
     }
   };
@@ -323,6 +332,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const service = document.getElementById('formService').value;
       const m2 = document.getElementById('formM2').value.trim();
       const units = document.getElementById('formUnits').value.trim();
+      const isSehitGazi = document.getElementById('formSehitGazi') ? document.getElementById('formSehitGazi').checked : false;
+      const isLowIncome = document.getElementById('formLowIncome') ? document.getElementById('formLowIncome').checked : false;
       const notes = document.getElementById('formMessage').value.trim();
 
       if (!name || !phone) {
@@ -331,15 +342,17 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       // WhatsApp mesaj şablonu oluştur
-      let waMessage = `Merhaba Canikoğlu İnşaat,\n\nKentsel Dönüşüm / İnşaat Hizmeti için teklif ve bilgi almak istiyorum:\n`;
+      let waMessage = `Merhaba Canikoğlu & Topçu Mimarlık,\n\nKentsel Dönüşüm / Mimari İnşaat Hizmeti için teklif ve ücretsiz keşif almak istiyorum:\n`;
       waMessage += `👤 *Ad Soyad:* ${name}\n`;
       waMessage += `📞 *Telefon:* ${phone}\n`;
       waMessage += `📍 *İlçe/Lokasyon:* ${district}\n`;
       waMessage += `🏗️ *Talep Türü:* ${service}\n`;
-      if (m2) waMessage += `📐 *Tahmini Alan:* ${m2} m²\n`;
+      if (m2) waMessage += `📐 *Tahmini Alan:* ${m2} m² (B 3 Sınıfı Proje)\n`;
       if (units) waMessage += `🏢 *Daire/Bölüm Sayısı:* ${units}\n`;
+      if (isSehitGazi) waMessage += `🎖️ *Özel Durum:* Şehit / Gazi Ailesi (Ücretsiz Dönüşüm & Tam Kira Talebi)\n`;
+      if (isLowIncome) waMessage += `💼 *Gelir Durumu:* 30.000 TL altı hane geliri (Tam Kira Desteği Talebi)\n`;
       if (notes) waMessage += `📝 *Notlar:* ${notes}\n`;
-      waMessage += `\nEn kısa sürede dönüşünüzü rica ederim.`;
+      waMessage += `\nTaşınma masraflarının firmanızca üstlenilmesi ve Yarısı Bizden devlet desteğiyle ilgili görüşmek rica olunur.`;
 
       const encodedMsg = encodeURIComponent(waMessage);
       const waNumber = '905320000000'; // Firma iletişim numarası
@@ -360,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 5. ÇEREZ BİLDİRİMİ (Evveko Stili)
+  // 5. ÇEREZ BİLDİRİMİ
   const cookieBanner = document.getElementById('cookieConsentBanner');
   const btnAcceptCookie = document.getElementById('btnAcceptCookie');
 
@@ -379,5 +392,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  console.log('Canikoğlu İnşaat web platformu başarıyla yüklendi.');
+  console.log('Canikoğlu & Topçu Mimarlık web platformu başarıyla yüklendi.');
 });
