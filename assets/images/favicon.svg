@@ -1,24 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
-    <linearGradient id="favGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2d8f4e"/>
-      <stop offset="100%" stop-color="#166534"/>
-    </linearGradient>
-    <linearGradient id="favAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#d97706"/>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1ca8cb"/>
+      <stop offset="100%" stop-color="#16213e"/>
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="22" fill="#0f172a"/>
-  <g transform="translate(11, 10)">
-    <rect x="0" y="24" width="22" height="56" rx="4" fill="url(#favGreen)" opacity="0.9"/>
-    <rect x="26" y="10" width="26" height="70" rx="5" fill="url(#favGreen)"/>
-    <rect x="56" y="32" width="22" height="48" rx="4" fill="url(#favGreen)" opacity="0.75"/>
-    <path d="M 0 24 L 39 0 L 78 32" fill="none" stroke="url(#favAccent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="33" y="22" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
-    <rect x="41" y="22" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
-    <rect x="33" y="34" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
-    <rect x="41" y="34" width="4" height="6" rx="1" fill="#ffffff" opacity="0.9"/>
-    <path d="M 6 72 Q 40 86 76 68" fill="none" stroke="url(#favAccent)" stroke-width="3" stroke-linecap="round"/>
-  </g>
+  <rect width="64" height="64" rx="14" fill="#16213e"/>
+  <polygon points="32,8 54,20 54,44 32,56 10,44 10,20" fill="none" stroke="#1ca8cb" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M32,15 L32,49 M20,26 L32,19 L44,26 M20,38 L32,31 L44,38" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="32" cy="15" r="2.5" fill="#d4af37"/>
 </svg>

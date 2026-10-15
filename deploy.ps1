@@ -1,32 +1,28 @@
-param(
-    [string]$Message = "Web sitesi guncellemesi: $(Get-Date -Format 'dd.MM.yyyy HH:mm')"
-)
+# CANİKOĞLU & TOPÇU MİMARLIK — Tek Tık Otomatik Dağıtım Scripti
+# Değişiklikleri GitHub'a push eder ve Vercel otomatik canlıya alır.
 
-Write-Host "==========================================" -ForegroundColor Green
-Write-Host "   CANIKOGLU INSAAT - OTOMATIK DEPLOY" -ForegroundColor Green
-Write-Host "==========================================" -ForegroundColor Green
+Write-Host "==========================================================" -ForegroundColor Cyan
+Write-Host " CANİKOĞLU & TOPÇU MİMARLIK — Otomatik Yayınlama Sistemi  " -ForegroundColor Cyan
+Write-Host "==========================================================" -ForegroundColor Cyan
 
-Write-Host "`n[1/3] Git degisiklikleri hazirlaniyor..." -ForegroundColor Cyan
-git add .
-$status = git status --porcelain
-if ($status) {
-    git commit -m $Message
-    Write-Host "Commit olusturuldu: $Message" -ForegroundColor Green
-} else {
-    Write-Host "Yeni degisiklik yok, mevcut surum push ediliyor." -ForegroundColor Yellow
+$commitMsg = "feat: Ekşioğlu Life birebir lüks mimari tasarımı, B3 kentsel dönüşüm hesaplayıcı ve projeler yayında"
+if ($args.Count -gt 0) {
+    $commitMsg = $args[0]
 }
 
-Write-Host "`n[2/3] GitHub reposuna push ediliyor..." -ForegroundColor Cyan
+Write-Host "`n[1/3] Git değişiklikleri taranıyor ve ekleniyor..." -ForegroundColor Yellow
+git add -A
+
+Write-Host "`n[2/3] Commit oluşturuluyor: '$commitMsg'..." -ForegroundColor Yellow
+git commit -m "$commitMsg"
+
+Write-Host "`n[3/3] GitHub'a gönderiliyor (Vercel otomatik derleme tetiklenecek)..." -ForegroundColor Yellow
 git push origin main
+
 if ($LASTEXITCODE -eq 0) {
-    Write-Host "GitHub push islemi basarili!" -ForegroundColor Green
+    Write-Host "`nBAŞARILI! Kodlar GitHub'a gönderildi." -ForegroundColor Green
+    Write-Host "Vercel otomatik olarak canlı yayını güncelledi." -ForegroundColor Green
+    Write-Host "Canlı Site URL: https://kentsel-theta.vercel.app" -ForegroundColor Cyan
 } else {
-    Write-Host "GitHub push sirasinda bir uyari olustu." -ForegroundColor Yellow
+    Write-Host "`nHata oluştu! Lütfen internet veya git bağlantınızı kontrol edin." -ForegroundColor Red
 }
-
-Write-Host "`n[3/3] Vercel Production Deploy tetikleniyor..." -ForegroundColor Cyan
-vercel --prod --yes
-
-Write-Host "`n==========================================" -ForegroundColor Green
-Write-Host "   TUM ISLEMLER BASARIYLA TAMAMLANDI!" -ForegroundColor Green
-Write-Host "==========================================" -ForegroundColor Green

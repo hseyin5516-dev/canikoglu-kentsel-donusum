@@ -1,1356 +1,905 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canikoğlu &amp; Topçu Mimarlık | Kentsel Dönüşüm, Proje Tasarım &amp; Anahtar Teslim Taahhüt</title>
-  
-  <!-- Meta Etiketleri & SEO -->
-  <meta name="description" content="Canikoğlu & Topçu Mimarlık; kentsel dönüşüm alanında mimari proje tasarımdan kontrollü yıkıma, B 3 sınıfı depreme dayanıklı kaba inşaattan anahtar teslim ince işçilik ve peyzaja kadar A'dan Z'ye müteahhitlik hizmeti sunar. Taşınma masrafları firmamızca karşılanır, şehit ve gazi ailelerine ücretsiz dönüşüm imkânı.">
-  <meta name="keywords" content="canikoğlu ve topçu mimarlık, kentsel dönüşüm, b3 sınıfı proje, mimari proje tasarım, anahtar teslim inşaat, peyzaj, yarısı bizden kampanyası, kira yardımı, taşınma desteği, başakşehir stadyum, cerrahpaşa hastane, kartal kız yurdu, esenyurt kentsel dönüşüm">
-  <meta name="author" content="Canikoğlu & Topçu Mimarlık Ltd. Şti.">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-
-  <!-- Google Fonts (Poppins) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome 6 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Bootstrap 5 CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
-  <!-- Özel Stil Dosyası -->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <!-- ==========================================================================
-       ÜST DUYURU BANDI (Evveko Tarzı & Özel Sosyal Destekler)
-       ========================================================================== -->
-  <div class="top-notice-bar">
-    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
-      <div class="d-flex align-items-center">
-        <span class="pulse-dot"></span>
-        <span>📢 <strong>Yarısı Bizden Desteği + Canikoğlu &amp; Topçu Güvencesi:</strong> Taşınma Masrafları Firmamızca Karşılanır!</span>
-      </div>
-      <div class="d-flex align-items-center gap-3 small">
-        <span class="d-none d-md-inline"><i class="fas fa-medal text-warning me-1"></i> Şehit &amp; Gazi Ailelerine <strong>Ücretsiz Dönüşüm</strong></span>
-        <a href="#hesaplama" class="text-warning fw-bold">B 3 Sınıfı Maliyet Hesapla →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       ANA NAVBAR
-       ========================================================================== -->
-  <header class="header sticky-top">
-    <nav class="navbar navbar-expand-lg main-navbar">
-      <div class="container-fluid px-3 px-lg-4 px-xl-5" style="max-width: 1540px;">
-        <!-- Logo -->
-        <a class="navbar-brand navbar-brand-custom d-flex align-items-center" href="#anasayfa">
-          <img src="assets/images/logo.svg" alt="Canikoğlu &amp; Topçu Mimarlık Logo">
-        </a>
-
-        <!-- Mobil Menü Toggle Butonu -->
-        <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCanikContent" aria-controls="navbarCanikContent" aria-expanded="false" aria-label="Menüyü Aç">
-          <i class="fas fa-bars-staggered fs-4 text-dark"></i>
-        </button>
-
-        <!-- Menü Öğeleri -->
-        <div class="collapse navbar-collapse" id="navbarCanikContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom active" href="#anasayfa">Anasayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#hizmetler">Hizmetlerimiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#projeler">Şantiyelerimiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#surec">8 Adımda Süreç</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#hesaplama">Maliyet Hesapla</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#sosyal-destek">Sosyal Destek</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="#iletisim">İletişim</a>
-            </li>
-          </ul>
-
-          <!-- Sağ Taraf Hızlı Aksiyonlar -->
-          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
-            <a href="tel:08503003400" class="nav-cta-phone d-none d-xl-inline-flex">
-              <i class="fas fa-phone-volume"></i>
-              <span>0850 300 34 00</span>
-            </a>
-            <a href="#iletisim" class="btn-nav-cta">
-              <i class="fas fa-file-signature"></i>
-              <span>Ücretsiz Keşif Al</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ==========================================================================
-       HERO BÖLÜMÜ (Evveko Tasarım Dili & Güçlü Sosyal Vaatler)
-       ========================================================================== -->
-  <section id="anasayfa" class="hero-section">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        
-        <!-- Sol Sütun: Başlık ve Açıklamalar -->
-        <div class="col-lg-7">
-          <div class="hero-pill">
-            <i class="fas fa-compass-drafting text-success"></i>
-            <span>Mimari Tasarım &amp; Müteahhitlik Gücü Bir Arada</span>
-          </div>
-
-          <h1 class="hero-title">
-            Kentsel Dönüşümde <br>
-            <span class="text-gradient">Projeden Anahtar Teslime</span> <br>
-            Güvenli &amp; Çağdaş Yapılar
-          </h1>
-
-          <p class="hero-lead">
-            <strong>CANİKOĞLU &amp; TOPÇU MİMARLIK</strong> olarak; mimari proje tasarımından resmi ruhsatlara, kontrollü yıkımdan <strong>B 3 sınıfı depreme dayanıklı (C35/40 betonarme)</strong> kaba inşaata, anahtar teslim iç mekanlardan çevre peyzajına kadar kentsel dönüşüm sürecinizi tek elden, şeffaf ve resmi sözleşmeyle tamamlıyoruz.
-          </p>
-
-          <!-- Vurgu Kutusu: Taşınma & Özel Sosyal Destekler -->
-          <div class="p-3 mb-4 rounded-3 border bg-white shadow-sm d-flex flex-column flex-sm-row align-items-sm-center gap-3">
-            <div class="width-50 height-50 rounded-circle bg-success-subtle text-success d-flex align-items-center justify-content-center p-3 fs-3 flex-shrink-0">
-              <i class="fas fa-truck-ramp-box"></i>
-            </div>
-            <div>
-              <div class="fw-bold text-dark small">Firmamızın Özel Taahhütleri:</div>
-              <span class="text-muted small">
-                • <strong>Taşınma masraflarını firmamız üstlenir.</strong><br>
-                • Hane geliri 30.000 TL altı kat maliklerine <strong>kira yardımı tam</strong> yapılır.<br>
-                • <strong>Şehit ve gazi ailelerimizden ücret talep edilmez</strong>, kira giderleri tam karşılanır.
-              </span>
-            </div>
-          </div>
-
-          <div class="hero-actions">
-            <a href="#iletisim" class="btn-canik-primary">
-              <i class="fas fa-city"></i>
-              <span>Kentsel Dönüşüm Başvurusu</span>
-            </a>
-            <a href="#hesaplama" class="btn-canik-secondary">
-              <i class="fas fa-calculator text-success"></i>
-              <span>B 3 Maliyet &amp; Hibe Hesapla</span>
-            </a>
-            <a href="#projeler" class="btn-canik-secondary">
-              <i class="fas fa-building text-warning"></i>
-              <span>Şantiyelerimizi Gör</span>
-            </a>
-          </div>
-
-          <!-- İstatistik Şeridi -->
-          <div class="hero-stats-row">
-            <div class="hero-stat-card">
-              <div class="hero-stat-icon">
-                <i class="fas fa-award"></i>
-              </div>
-              <div>
-                <div class="hero-stat-val">20+ Yıl</div>
-                <div class="hero-stat-label">Sektör Tecrübesi</div>
-              </div>
-            </div>
-
-            <div class="hero-stat-card">
-              <div class="hero-stat-icon">
-                <i class="fas fa-compass-drafting"></i>
-              </div>
-              <div>
-                <div class="hero-stat-val">Mimari</div>
-                <div class="hero-stat-label">Statik &amp; Tasarım</div>
-              </div>
-            </div>
-
-            <div class="hero-stat-card">
-              <div class="hero-stat-icon">
-                <i class="fas fa-cubes-stacked"></i>
-              </div>
-              <div>
-                <div class="hero-stat-val">B 3 Sınıfı</div>
-                <div class="hero-stat-label">C35/40 Radye Temel</div>
-              </div>
-            </div>
-
-            <div class="hero-stat-card">
-              <div class="hero-stat-icon">
-                <i class="fas fa-hand-holding-hand"></i>
-              </div>
-              <div>
-                <div class="hero-stat-val">A'dan Z'ye</div>
-                <div class="hero-stat-label">Peyzaj Dahil Teslim</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sağ Sütun: "Yarısı Bizden" Kampanya Kartı (Evveko'nun imza kartı) -->
-        <div class="col-lg-5">
-          <div class="support-hero-card">
-            <div class="support-card-head">
-              <div class="support-card-badge-icon">
-                <i class="fas fa-handshake-angle"></i>
-              </div>
-              <div class="support-card-title">
-                <h3>“Yarısı Bizden” Kampanyası</h3>
-                <span>Devlet Destekli Kentsel Dönüşüm</span>
-              </div>
-            </div>
-
-            <div class="support-item-box">
-              <div>
-                <span class="label-text">Hibe Desteği (Daire Başı)</span>
-                <span class="amount-val">₺875.000</span>
-              </div>
-              <span class="support-badge-tag hibe">Geri Ödemesiz</span>
-            </div>
-
-            <div class="support-item-box">
-              <div>
-                <span class="label-text">Kredi Desteği (Daire Başı)</span>
-                <span class="amount-val">₺875.000</span>
-              </div>
-              <span class="support-badge-tag kredi">Düşük Faiz &amp; 10 Yıl Vade</span>
-            </div>
-
-            <div class="support-item-box">
-              <div>
-                <span class="label-text">Kira &amp; Taşınma Desteği</span>
-                <span class="amount-val">₺5.500 - ₺7.000 / Ay</span>
-              </div>
-              <span class="support-badge-tag kira">Taşınma Firmamızdan</span>
-            </div>
-
-            <div class="support-total-box">
-              <div>
-                <span>Daire Başına Toplam Destek</span>
-                <small class="d-block text-white-50">%50+1 Çoğunluk ile Hemen Başvuru</small>
-              </div>
-              <strong>₺1.750.000</strong>
-            </div>
-
-            <a href="#iletisim" class="btn-canik-accent w-100">
-              <i class="fas fa-file-invoice-dollar"></i>
-              <span>Devlet Desteği İçin Başvur</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       SOSYAL DESTEKLER & ŞEHİT/GAZİ AYRICALIK BÖLÜMÜ
-       ========================================================================== -->
-  <section id="sosyal-destek" class="py-5 bg-white border-top border-bottom">
-    <div class="container">
-      <div class="text-center mb-4">
-        <span class="section-pill-badge">
-          <i class="fas fa-heart text-danger"></i> Sosyal Sorumluluk İlkelerimiz
-        </span>
-        <h3 class="fw-bold mb-2">Canikoğlu &amp; Topçu Mimarlık Yanınızda</h3>
-        <p class="text-muted mx-auto" style="max-width: 700px;">
-          Ticari kaygılardan önce insan hayatını, toplumsal dayanışmayı ve vatan fedakarlıklarını baş tacı ediyoruz.
-        </p>
-      </div>
-
-      <div class="row g-4">
-        
-        <!-- Kart 1: Şehit ve Gazi Aileleri -->
-        <div class="col-md-4">
-          <div class="p-4 rounded-4 border border-danger-subtle bg-light h-100 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="width-50 height-50 rounded-3 bg-danger text-white d-flex align-items-center justify-content-center fs-4">
-                  <i class="fas fa-medal"></i>
-                </div>
-                <div>
-                  <h5 class="fw-bold text-dark mb-0">Şehit &amp; Gazi Aileleri</h5>
-                  <span class="badge bg-danger-subtle text-danger">%100 ÜCRETSİZ</span>
-                </div>
-              </div>
-              <p class="text-muted small mb-0">
-                Aziz şehitlerimizin emanetleri ve kahraman gazilerimizin hanelerinden <strong>inşaat yapım bedeli talep edilmez</strong>. Dönüşüm süresince <strong>tüm kira giderleri firmamızca tam olarak karşılanır.</strong>
-              </p>
-            </div>
-            <div class="mt-3 pt-3 border-top border-danger-subtle small fw-bold text-danger">
-              <i class="fas fa-circle-check me-1"></i> Başımızın Tacısınız
-            </div>
-          </div>
-        </div>
-
-        <!-- Kart 2: 30 Bin Altı Gelirli Ailelere Tam Kira -->
-        <div class="col-md-4">
-          <div class="p-4 rounded-4 border border-success-subtle bg-light h-100 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="width-50 height-50 rounded-3 bg-success text-white d-flex align-items-center justify-content-center fs-4">
-                  <i class="fas fa-hand-holding-dollar"></i>
-                </div>
-                <div>
-                  <h5 class="fw-bold text-dark mb-0">Dar Gelirli Kat Malikleri</h5>
-                  <span class="badge bg-success-subtle text-success">TAM KİRA YARDIMI</span>
-                </div>
-              </div>
-              <p class="text-muted small mb-0">
-                Hane geliri <strong>30.000 TL'nin altında olan</strong> kat maliklerimizin inşaat süresince mağdur olmaması için kira yardımı Canikoğlu &amp; Topçu Mimarlık tarafından <strong>tam ve eksiksiz</strong> olarak yapılır.
-              </p>
-            </div>
-            <div class="mt-3 pt-3 border-top border-success-subtle small fw-bold text-success">
-              <i class="fas fa-circle-check me-1"></i> Kesintisiz Barınma Güvencesi
-            </div>
-          </div>
-        </div>
-
-        <!-- Kart 3: Taşınma Masrafları -->
-        <div class="col-md-4">
-          <div class="p-4 rounded-4 border border-primary-subtle bg-light h-100 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="width-50 height-50 rounded-3 bg-primary text-white d-flex align-items-center justify-content-center fs-4">
-                  <i class="fas fa-truck-moving"></i>
-                </div>
-                <div>
-                  <h5 class="fw-bold text-dark mb-0">Taşınma Masrafları</h5>
-                  <span class="badge bg-primary-subtle text-primary">FİRMAMIZ ÜSTLENİR</span>
-                </div>
-              </div>
-              <p class="text-muted small mb-0">
-                Eski binanızın tahliyesinde ve yeni dairenize taşınırken oluşacak <strong>tüm profesyonel nakliye ve taşınma masraflarını firmamız üstlenir.</strong> Hak sahiplerine ek yük bırakmayız.
-              </p>
-            </div>
-            <div class="mt-3 pt-3 border-top border-primary-subtle small fw-bold text-primary">
-              <i class="fas fa-circle-check me-1"></i> Sıfır Taşınma Stresi
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       HİZMET ALANLARIMIZ (Proje Tasarım, İnşaat, Anahtar Teslim, Peyzaj)
-       ========================================================================== -->
-  <section id="hizmetler" class="services-section-wrapper">
-    <div class="container">
-      
-      <div class="text-center mb-5">
-        <span class="section-pill-badge">
-          <i class="fas fa-screwdriver-wrench"></i> Faaliyet Alanlarımız
-        </span>
-        <h2 class="section-main-title">Uçtan Uca Mimari Tasarım &amp; İnşaat Taahhüt</h2>
-        <p class="section-main-subtitle">
-          Canikoğlu &amp; Topçu Mimarlık; kentsel dönüşüm projenizin hiçbir aşamasını taşerona devretmeden, kendi mimar ve şantiye ekipleriyle A'dan Z'ye tamamlar.
-        </p>
-      </div>
-
-      <div class="row g-4">
-        
-        <!-- 1. Proje & Mimari Tasarım -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box-card">
-            <div class="service-icon-wrap">
-              <i class="fas fa-compass-drafting"></i>
-            </div>
-            <h3 class="service-title">1. Proje &amp; Mimari Tasarım</h3>
-            <p class="service-desc">
-              Deprem yönetmeliğine tam uyumlu statik, mimari, elektrik ve mekanik projelerin hazırlanması, 3D görselleştirme ve belediye ruhsat onay süreçleri.
-            </p>
-            <ul class="service-feature-list">
-              <li><i class="fas fa-circle-check"></i> İmar Durumu ve Emsal Analizi</li>
-              <li><i class="fas fa-circle-check"></i> 3D Kat Planları &amp; Sanal Gezinti</li>
-              <li><i class="fas fa-circle-check"></i> Avan, Statik &amp; Ruhsat Projeleri</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 2. Kentsel Dönüşüm Danışmanlığı & Risk Tespiti -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box-card">
-            <div class="service-icon-wrap">
-              <i class="fas fa-file-contract"></i>
-            </div>
-            <h3 class="service-title">2. Kentsel Dönüşüm &amp; Müşavirlik</h3>
-            <p class="service-desc">
-              6306 sayılı kanun kapsamında lisanslı karot alımı, riskli yapı tespiti, malikler arası uzlaşma (%50+1) ve noter onaylı sözleşme yönetimi.
-            </p>
-            <ul class="service-feature-list">
-              <li><i class="fas fa-circle-check"></i> Resmi Karot &amp; Donatı Test Raporu</li>
-              <li><i class="fas fa-circle-check"></i> %50+1 Salt Çoğunluk Protokolü</li>
-              <li><i class="fas fa-circle-check"></i> Yarısı Bizden Hibe &amp; Kredi Başvurusu</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 3. Yıkım, Hafriyat & İksa Çalışmaları -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box-card">
-            <div class="service-icon-wrap">
-              <i class="fas fa-trowel-bricks"></i>
-            </div>
-            <h3 class="service-title">3. Yıkım &amp; Derin Zemin İksa</h3>
-            <p class="service-desc">
-              Kendi ağır iş makinelerimizle çevre binaların güvenliği sağlanarak kontrollü bina yıkımı, derin temel hafriyatı, fore kazık ve iksa.
-            </p>
-            <ul class="service-feature-list">
-              <li><i class="fas fa-circle-check"></i> Güvenli &amp; Tozsuz Kontrollü Yıkım</li>
-              <li><i class="fas fa-circle-check"></i> -18 Metreye Varan Derin Hafriyat</li>
-              <li><i class="fas fa-circle-check"></i> Donatılı Fore Kazık &amp; Ankrajlı İksa</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 4. Depreme Dayanıklı Kaba İnşaat & Taahhüt -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box-card">
-            <div class="service-icon-wrap">
-              <i class="fas fa-building-shield"></i>
-            </div>
-            <h3 class="service-title">4. B 3 Sınıfı Depreme Dayanıklı İnşaat</h3>
-            <p class="service-desc">
-              Yüksek mukavemetli C35/40 hazır beton, B420C nervürlü demir, radye jeneral temel ve sağlam perde duvar donatılarıyla güvenli yapılar.
-            </p>
-            <ul class="service-feature-list">
-              <li><i class="fas fa-circle-check"></i> C35/40 Sınıfı Sertifikalı Beton</li>
-              <li><i class="fas fa-circle-check"></i> Radye Jeneral Temel &amp; Tünel Kalıp</li>
-              <li><i class="fas fa-circle-check"></i> Bağımsız Yapı Denetim ve Laboratuvar</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 5. Anahtar Teslim İnce Yapı & İç Mimari -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box-card">
-            <div class="service-icon-wrap">
-              <i class="fas fa-key"></i>
-            </div>
-            <h3 class="service-title">5. Anahtar Teslim İnce İşçilik</h3>
-            <p class="service-desc">
-              A1 taşyünü ısı &amp; ses yalıtımı, özel tasarım lake mutfak ve banyolar, 1. sınıf seramik ve parke kaplamalarıyla eksiksiz teslim garantisi.
-            </p>
-            <ul class="service-feature-list">
-              <li><i class="fas fa-circle-check"></i> A1 Sınıfı Yanmaz Taşyünü Yalıtım</li>
-              <li><i class="fas fa-circle-check"></i> Lüks Mutfak, Banyo &amp; Kapı Tasarımı</li>
-              <li><i class="fas fa-circle-check"></i> Akıllı Ev &amp; Yerden Isıtma Altyapısı</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 6. Peyzaj & Çevre Düzenleme -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box-card">
-            <div class="service-icon-wrap">
-              <i class="fas fa-tree"></i>
-            </div>
-            <h3 class="service-title">6. Peyzaj &amp; Çevre Düzenleme</h3>
-            <p class="service-desc">
-              Yeşil alanlar, çocuk oyun parkları, kamelyalar, açık ve kapalı otopark alanları, otomatik sulama ve çevre aydınlatması ile modern yaşam.
-            </p>
-            <ul class="service-feature-list">
-              <li><i class="fas fa-circle-check"></i> Otomatik Sulamalı Yeşil Peyzaj</li>
-              <li><i class="fas fa-circle-check"></i> Kapalı &amp; Açık Otopark Sistemleri</li>
-              <li><i class="fas fa-circle-check"></i> Çocuk Oyun Alanları &amp; Dinlenme Kamelyaları</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       ŞANTİYELERİMİZ & GERÇEK PROJE REFERANSLARIMIZ (Müşteri Detaylarıyla)
-       ========================================================================== -->
-  <section id="projeler" class="projects-section-wrapper">
-    <div class="container">
-      
-      <div class="text-center mb-4">
-        <span class="section-pill-badge">
-          <i class="fas fa-images"></i> Gerçek Şantiye &amp; Proje Portföyümüz
-        </span>
-        <h2 class="section-main-title">Referanslarımız ve Devam Eden Projelerimiz</h2>
-        <p class="section-main-subtitle">
-          Başakşehir Stadyumu'ndan Cerrahpaşa Hastanesi'ne, Kartal Kız Yurdu'ndan Esenyurt toplu konut şantiyelerimize kadar gerçek imalatlarımız.
-        </p>
-      </div>
-
-      <!-- Filtre Butonları -->
-      <div class="project-filter-buttons">
-        <button class="filter-btn active" data-filter="all">Tüm Projeler (6)</button>
-        <button class="filter-btn" data-filter="donusum">Kentsel Dönüşüm</button>
-        <button class="filter-btn" data-filter="kamu-ozel">Kamu &amp; Özel Yapılar</button>
-        <button class="filter-btn" data-filter="celik">Çelik Konstrüksiyon</button>
-        <button class="filter-btn" data-filter="hafriyat">Derin Zemin &amp; İksa</button>
-      </div>
-
-      <!-- Proje Kartları Grid'i -->
-      <div class="row g-4" id="projectGrid">
-        
-        <!-- Proje 1 (Esenyurt Kule Vinçli Betonarme Resim) -->
-        <div class="col-md-6 col-lg-4 project-grid-item" data-category="donusum">
-          <div class="project-card">
-            <div class="project-media-wrap">
-              <img src="assets/images/projects/proje-1-konut-bloklari.jpg" alt="Esenyurt Kentsel Dönüşüm ve Rezidans Blokları">
-              <span class="project-status-badge status-ongoing">
-                <i class="fas fa-spinner fa-spin me-1"></i> Kaba İnşaat İlerliyor
-              </span>
-              <div class="project-zoom-trigger open-project-modal" data-project="proje-1" title="Fotoğrafı Büyüt">
-                <i class="fas fa-magnifying-glass-plus"></i>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-loc-tag">
-                <i class="fas fa-map-pin"></i> İSTANBUL / ESENYURT
-              </div>
-              <h4 class="project-card-title">Esenyurt Kentsel Dönüşüm Blokları</h4>
-              <p class="project-card-desc">
-                Kule vinçler, C35/40 hazır beton ve radye jeneral temel sistemiyle yükselen modern çok bloklu kentsel dönüşüm projemiz.
-              </p>
-              <div class="project-specs-grid">
-                <div class="project-spec-item">
-                  <i class="fas fa-cubes"></i>
-                  <span><strong>B 3 Sınıfı</strong> Yapı</span>
-                </div>
-                <div class="project-spec-item">
-                  <i class="fas fa-hammer"></i>
-                  <span><strong>Kule Vinç</strong> Şantiye</span>
-                </div>
-              </div>
-              <button class="project-action-btn open-project-modal" data-project="proje-1">
-                <i class="fas fa-circle-info"></i> Detayları &amp; Şantiyeyi İncele
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proje 2 (Güngören / Bahçelievler Kaba İnşaat) -->
-        <div class="col-md-6 col-lg-4 project-grid-item" data-category="donusum">
-          <div class="project-card">
-            <div class="project-media-wrap">
-              <img src="assets/images/projects/proje-2-santiye-kaba-yapi.jpg" alt="Marmara Vizyon Şantiye Sahası">
-              <span class="project-status-badge status-ongoing">
-                <i class="fas fa-hard-hat me-1"></i> Şantiye Kaba İmalat
-              </span>
-              <div class="project-zoom-trigger open-project-modal" data-project="proje-2" title="Fotoğrafı Büyüt">
-                <i class="fas fa-magnifying-glass-plus"></i>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-loc-tag">
-                <i class="fas fa-map-pin"></i> İSTANBUL / GÜNGÖREN - BAHÇELİEVLER
-              </div>
-              <h4 class="project-card-title">Marmara Vizyon Şantiye Sahası</h4>
-              <p class="project-card-desc">
-                Ada bazlı kentsel dönüşüm taahhüdümüz kapsamında ağır iş makineleri (Daewoo ekskavatör, vinçler) ile sürdürülen güvenli şantiye.
-              </p>
-              <div class="project-specs-grid">
-                <div class="project-spec-item">
-                  <i class="fas fa-truck"></i>
-                  <span><strong>Ağır Makine</strong> Parkı</span>
-                </div>
-                <div class="project-spec-item">
-                  <i class="fas fa-shield-alt"></i>
-                  <span><strong>C35/40</strong> Betonarme</span>
-                </div>
-              </div>
-              <button class="project-action-btn open-project-modal" data-project="proje-2">
-                <i class="fas fa-circle-info"></i> Detayları &amp; Şantiyeyi İncele
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proje 3 (Kartal Kız Yurdu Binası) -->
-        <div class="col-md-6 col-lg-4 project-grid-item" data-category="kamu-ozel">
-          <div class="project-card">
-            <div class="project-media-wrap">
-              <img src="assets/images/projects/proje-3-cephe-ve-ince-isler.jpg" alt="Kartal Kız Yurdu Binası Giriş Alüminyum Doğrama">
-              <span class="project-status-badge status-inspection">
-                <i class="fas fa-paint-roller me-1"></i> İnce İşler &amp; Cephe
-              </span>
-              <div class="project-zoom-trigger open-project-modal" data-project="proje-3" title="Fotoğrafı Büyüt">
-                <i class="fas fa-magnifying-glass-plus"></i>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-loc-tag">
-                <i class="fas fa-map-pin"></i> İSTANBUL / KARTAL
-              </div>
-              <h4 class="project-card-title">Kartal Kız Yurdu Binası</h4>
-              <p class="project-card-desc">
-                Bina giriş alüminyum doğramaları, iskele üzeri A1 sınıfı taşyünü ısı ve ses mantolaması, kompozit dış cephe ve lüks iç ince işçilikler.
-              </p>
-              <div class="project-specs-grid">
-                <div class="project-spec-item">
-                  <i class="fas fa-door-open"></i>
-                  <span><strong>Alüminyum</strong> Doğrama</span>
-                </div>
-                <div class="project-spec-item">
-                  <i class="fas fa-shield-halved"></i>
-                  <span><strong>Taşyünü</strong> A1 Yanmaz</span>
-                </div>
-              </div>
-              <button class="project-action-btn open-project-modal" data-project="proje-3">
-                <i class="fas fa-circle-info"></i> Detayları &amp; Şantiyeyi İncele
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proje 4 (Cerrahpaşa Hastane Çelik Yapı Projesi) -->
-        <div class="col-md-6 col-lg-4 project-grid-item" data-category="celik kamu-ozel">
-          <div class="project-card">
-            <div class="project-media-wrap">
-              <img src="assets/images/projects/proje-4-celik-konstruksiyon.jpg" alt="Cerrahpaşa Tıp Fakültesi Hastane Çelik Yapı Projesi">
-              <span class="project-status-badge status-completed">
-                <i class="fas fa-check-circle me-1"></i> Hastanede Başarıyla Teslim
-              </span>
-              <div class="project-zoom-trigger open-project-modal" data-project="proje-4" title="Fotoğrafı Büyüt">
-                <i class="fas fa-magnifying-glass-plus"></i>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-loc-tag">
-                <i class="fas fa-map-pin"></i> İSTANBUL / FATİH - CERRAHPAŞA
-              </div>
-              <h4 class="project-card-title">Cerrahpaşa Hastanesi Çelik Yapı</h4>
-              <p class="project-card-desc">
-                İstanbul Ünv. Cerrahpaşa Tıp Fakültesi Hastanesi projesinde; deprem ve yangın yönetmeliğine %100 uyumlu ağır yapısal çelik taşıyıcı bina ve kaçış merdivenleri.
-              </p>
-              <div class="project-specs-grid">
-                <div class="project-spec-item">
-                  <i class="fas fa-hospital"></i>
-                  <span><strong>Sağlık</strong> Yapısı</span>
-                </div>
-                <div class="project-spec-item">
-                  <i class="fas fa-fire-extinguisher"></i>
-                  <span><strong>Yangın</strong> Merdiveni</span>
-                </div>
-              </div>
-              <button class="project-action-btn open-project-modal" data-project="proje-4">
-                <i class="fas fa-circle-info"></i> Detayları &amp; Şantiyeyi İncele
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proje 5 (Başakşehir 17 Bin Kişilik Stadyum) -->
-        <div class="col-md-6 col-lg-4 project-grid-item" data-category="kamu-ozel celik">
-          <div class="project-card">
-            <div class="project-media-wrap">
-              <img src="assets/images/projects/proje-5-tribun-stadyum-yapi.jpg" alt="Başakşehir 17 Bin Kişilik Stadyum Prekast Tribün">
-              <span class="project-status-badge status-completed">
-                <i class="fas fa-check-circle me-1"></i> 17.000 Kişilik Kapasite
-              </span>
-              <div class="project-zoom-trigger open-project-modal" data-project="proje-5" title="Fotoğrafı Büyüt">
-                <i class="fas fa-magnifying-glass-plus"></i>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-loc-tag">
-                <i class="fas fa-map-pin"></i> İSTANBUL / BAŞAKŞEHİR
-              </div>
-              <h4 class="project-card-title">Başakşehir 17.000 Kişilik Stadyum</h4>
-              <p class="project-card-desc">
-                Geniş açıklıklı çelik uzay kafes çatı sistemi, prekast betonarme tribün basamakları ve çevre altyapı mühendisliğiyle tamamlanan prestijli spor kompleksi.
-              </p>
-              <div class="project-specs-grid">
-                <div class="project-spec-item">
-                  <i class="fas fa-users"></i>
-                  <span><strong>17.000</strong> Kapasite</span>
-                </div>
-                <div class="project-spec-item">
-                  <i class="fas fa-network-wired"></i>
-                  <span><strong>Prekast</strong> Tribün</span>
-                </div>
-              </div>
-              <button class="project-action-btn open-project-modal" data-project="proje-5">
-                <i class="fas fa-circle-info"></i> Detayları &amp; Şantiyeyi İncele
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proje 6 (Zeytinburnu Derin Kazı ve İksa) -->
-        <div class="col-md-6 col-lg-4 project-grid-item" data-category="hafriyat">
-          <div class="project-card">
-            <div class="project-media-wrap">
-              <img src="assets/images/projects/proje-6-derin-kazi-iksa-hafriyat.jpg" alt="Zeytinburnu Vadi Rezidans Derin Kazı ve İksa">
-              <span class="project-status-badge status-completed">
-                <i class="fas fa-check-circle me-1"></i> Zemin İksa Tamamlandı
-              </span>
-              <div class="project-zoom-trigger open-project-modal" data-project="proje-6" title="Fotoğrafı Büyüt">
-                <i class="fas fa-magnifying-glass-plus"></i>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-loc-tag">
-                <i class="fas fa-map-pin"></i> İSTANBUL / ZEYTİNBURNU
-              </div>
-              <h4 class="project-card-title">Zeytinburnu Derin Kazı &amp; Fore Kazık</h4>
-              <p class="project-card-desc">
-                Çevre binaların güvenliğini sıfır risk prensibiyle koruyan -18 metre derin hafriyat kazısı, 320 adet donatılı fore kazık ve öngermeli ankraj iksa perdeleri.
-              </p>
-              <div class="project-specs-grid">
-                <div class="project-spec-item">
-                  <i class="fas fa-arrows-down-to-line"></i>
-                  <span><strong>-18 Metre</strong> Kazı</span>
-                </div>
-                <div class="project-spec-item">
-                  <i class="fas fa-bars-staggered"></i>
-                  <span><strong>320 Adet</strong> Fore Kazık</span>
-                </div>
-              </div>
-              <button class="project-action-btn open-project-modal" data-project="proje-6">
-                <i class="fas fa-circle-info"></i> Detayları &amp; Şantiyeyi İncele
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       İNTERAKTİF MALİYET HESAPLAMA MOTORU (B 3 Sınıfı Proje: 33.900 TL/m²)
-       ========================================================================== -->
-  <section id="hesaplama" class="calc-section-wrapper">
-    <div class="container">
-      
-      <div class="text-center mb-5">
-        <span class="section-pill-badge">
-          <i class="fas fa-calculator"></i> Şeffaf Maliyet Yönetimi
-        </span>
-        <h2 class="section-main-title">B 3 Sınıfı Kentsel Dönüşüm Maliyet Hesaplama</h2>
-        <p class="section-main-subtitle">
-          Bakanlık standartlarında <strong>B 3 sınıfı proje için 33.900 TL/m²</strong> taban maliyeti ve 2026/2027 "Yarısı Bizden" devlet hibesiyle binanızın maliyet tablosunu anında hesaplayın.
-        </p>
-      </div>
-
-      <!-- Bilgi Kutusu: B 3 Sınıfı Yapı Nedir? -->
-      <div class="alert alert-success border-success-subtle bg-success-subtle p-3 rounded-4 mb-4 d-flex align-items-center gap-3">
-        <i class="fas fa-circle-info text-success fs-3"></i>
-        <div class="small text-success-emphasis">
-          <strong>B 3 Sınıfı Yapı Nedir?</strong> Çevre, Şehircilik ve İklim Değişikliği Bakanlığı Yapı Yaklaşık Birim Maliyetleri tebliğinde tanımlanan; 4 ile 8 katlı, asansörlü, C35/40 betonarme taşıyıcı sistemli, kaloriferli/kombili ve A1 sınıfı taşyünü ısı/ses yalıtımlı standart apartman konut yapısıdır.
-        </div>
-      </div>
-
-      <div class="calc-card-container">
-        <div class="row g-5 align-items-center">
-          
-          <!-- Sol Taraf: Giriş Formu ve Parametreler -->
-          <div class="col-lg-7">
-            <h4 class="fw-bold mb-4 text-dark">
-              <i class="fas fa-sliders text-success me-2"></i> Bina Parametrelerinizi Belirleyin
-            </h4>
-
-            <div class="mb-4">
-              <label class="form-label fw-bold small text-secondary">
-                Toplam İnşaat / Arsa Alanı: <span id="calcAreaDisplay" class="text-success fs-5 fw-extrabold">1.000</span> m²
-              </label>
-              <input type="range" class="form-range" id="calcAreaRange" min="200" max="8000" step="50" value="1000">
-              <div class="d-flex justify-content-between text-muted small">
-                <span>200 m²</span>
-                <span>4.000 m²</span>
-                <span>8.000 m²</span>
-              </div>
-              <input type="number" id="calcArea" class="form-control-custom mt-2" value="1000" placeholder="Elle m² girin">
-            </div>
-
-            <div class="row g-3 mb-4">
-              <div class="col-md-6">
-                <label for="calcUnits" class="form-label fw-bold small text-secondary">Mevcut Bağımsız Bölüm (Daire) Sayısı</label>
-                <div class="input-group">
-                  <span class="input-group-text bg-white"><i class="fas fa-door-open text-muted"></i></span>
-                  <input type="number" id="calcUnits" class="form-control-custom" min="1" max="150" value="8">
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <label for="calcType" class="form-label fw-bold small text-secondary">Yapı Sınıfı &amp; Standart</label>
-                <select id="calcType" class="form-select-custom">
-                  <option value="1.0" selected>B 3 Sınıfı Standart Konut (33.900 TL / m²)</option>
-                  <option value="1.1357">B 3 Sınıfı + Lüks Rezidans Donatılı (38.500 TL / m²)</option>
-                  <option value="1.0619">B 3 Sınıfı Karma (Konut + Zemin Ticari Dükkan - 36.000 TL / m²)</option>
-                  <option value="0.944">Müstakil / Villa Tipi Kentsel Dönüşüm (32.000 TL / m²)</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="p-3 bg-light rounded-3 border border-light-subtle d-flex align-items-center gap-3">
-              <i class="fas fa-circle-check text-success fs-3"></i>
-              <div class="small">
-                <strong>Yarısı Bizden + Şirket Destekleri:</strong> Daire başına <strong>₺875.000 hibe</strong> + <strong>₺875.000 kredi</strong> desteği sistem tarafından düşülür. Taşınma masraflarını ise Canikoğlu &amp; Topçu Mimarlık üstlenir.
-              </div>
-            </div>
-          </div>
-
-          <!-- Sağ Taraf: Hesaplama Sonuç Kartı -->
-          <div class="col-lg-5">
-            <div class="calc-result-box">
-              <div>
-                <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2 border-secondary">
-                  <span class="text-uppercase small fw-bold text-white-50">B 3 Maliyet Özeti</span>
-                  <span class="badge bg-success" id="resB3UnitCost">33.900 TL / m²</span>
-                </div>
-
-                <div class="calc-res-item">
-                  <span class="calc-res-label">Tahmini Toplam İnşaat Maliyeti</span>
-                  <span class="calc-res-value" id="resTotalCost">₺33.900.000</span>
-                </div>
-
-                <div class="calc-res-item">
-                  <span class="calc-res-label">Toplam Devlet Hibesi (Geri Ödemesiz)</span>
-                  <span class="calc-res-value highlight-green" id="resTotalHibe">₺7.000.000</span>
-                </div>
-
-                <div class="calc-res-item">
-                  <span class="calc-res-label">Toplam Düşük Faizli Kredi İmkânı</span>
-                  <span class="calc-res-value highlight-gold" id="resTotalKredi">₺7.000.000</span>
-                </div>
-
-                <div class="calc-res-item">
-                  <span class="calc-res-label">Toplam Sağlanan Devlet Desteği</span>
-                  <span class="calc-res-value text-info" id="resTotalSupport">₺14.000.000</span>
-                </div>
-
-                <div class="calc-res-item">
-                  <span class="calc-res-label">Daire Başına Düşen Net Maliyet (Tahmini)</span>
-                  <span class="calc-res-value text-warning fs-3" id="resNetUnitCost">₺3.362.500</span>
-                </div>
-              </div>
-
-              <div class="mt-4 pt-3 border-top border-secondary">
-                <button id="btnTransferCalc" class="btn-canik-accent w-100 mb-2">
-                  <i class="fas fa-file-export"></i>
-                  <span>Bu Hesaplamayla Teklif İste</span>
-                </button>
-                <small class="text-white-50 text-center d-block">
-                  *Şehit &amp; Gazi ailelerimizden hiçbir yapım ücreti talep edilmez.
-                </small>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       8 ADIMDA KENTSEL DÖNÜŞÜM SÜRECİ (Evveko Esintili Yol Haritası)
-       ========================================================================== -->
-  <section id="surec" class="process-section-wrapper">
-    <div class="container">
-      
-      <div class="text-center mb-5">
-        <span class="section-pill-badge">
-          <i class="fas fa-route"></i> Yol Haritası
-        </span>
-        <h2 class="section-main-title">8 Adımda Kentsel Dönüşüm Süreci</h2>
-        <p class="section-main-subtitle">
-          İlk keşiften resmi iskâna ve anahtar teslime kadar tüm süreci sıfır hak kaybı ve tam şeffaflıkla yönetiyoruz.
-        </p>
-      </div>
-
-      <div class="process-grid-container">
-        
-        <!-- Adım 1 -->
-        <div class="process-step-item">
-          <div class="step-number-badge">1</div>
-          <h4 class="step-card-title">Ücretsiz Keşif &amp; İmar Analizi</h4>
-          <p class="step-card-text">
-            Uzman mimar ve mühendislerimiz parselinizi yerinde inceler; belediye imar durumunu, emsal hakkını ve proje potansiyelini ücretsiz raporlar.
-          </p>
-        </div>
-
-        <!-- Adım 2 -->
-        <div class="process-step-item">
-          <div class="step-number-badge">2</div>
-          <h4 class="step-card-title">Riskli Yapı Tespiti &amp; Karot</h4>
-          <p class="step-card-text">
-            Lisanslı kuruluşlarca binadan beton karot numuneleri alınır, demir donatı taraması yapılır ve resmi deprem risk raporu hazırlanır.
-          </p>
-        </div>
-
-        <!-- Adım 3 -->
-        <div class="process-step-item">
-          <div class="step-number-badge">3</div>
-          <h4 class="step-card-title">Mimari Tasarım &amp; 3D Planlar</h4>
-          <p class="step-card-text">
-            Topçu Mimarlık tasarım ekibimiz, hak sahipleriyle görüşerek modern kat planları, daire dağılım şemaları ve 3D dış cephe tasarımları hazırlar.
-          </p>
-        </div>
-
-        <!-- Adım 4 -->
-        <div class="process-step-item">
-          <div class="step-number-badge">4</div>
-          <h4 class="step-card-title">Malikler Sözleşmesi (%50+1)</h4>
-          <p class="step-card-text">
-            Yeni kanuna göre %50+1 salt çoğunluk ile noter onaylı müteahhitlik sözleşmesi imzalanır; tüm haklar hukuki güvence altına alınır.
-          </p>
-        </div>
-
-        <!-- Adım 5 -->
-        <div class="process-step-item">
-          <div class="step-number-badge">5</div>
-          <h4 class="step-card-title">"Yarısı Bizden" &amp; Kira Yardımı</h4>
-          <p class="step-card-text">
-            Bakanlık sistemine Tip-3 ve Yarısı Bizden başvuruları yapılarak daire başı 875.000 TL hibe, 875.000 TL kredi onaylatılır. Taşınmayı firmamız üstlenir.
-          </p>
-        </div>
-
-        <!-- Adım 6 -->
-        <div class="process-step-item">
-          <div class="step-number-badge">6</div>
-          <h4 class="step-card-title">Yıkım, Hafriyat &amp; Zemin İksa</h4>
-          <p class="step-card-text">
-            Bina çevre güvenliği alınarak kontrollü biçimde yıkılır; -18 metreye kadar derin kazı, fore kazık ve iksa ile zemin sağlamlaştırılır.
-          </p>
-        </div>
-
-        <!-- Adım 7 -->
-        <div class="process-step-item">
-          <div class="step-number-badge">7</div>
-          <h4 class="step-card-title">B 3 Sınıfı Depreme Dayanıklı Yapı</h4>
-          <p class="step-card-text">
-            Radye jeneral temel, C35/40 hazır beton ve B420C çeliğiyle binanın kaba yapısı yükselir; yapı denetim ve laboratuvar testleri eşzamanlı yürür.
-          </p>
-        </div>
-
-        <!-- Adım 8 -->
-        <div class="process-step-item">
-          <div class="step-number-badge">8</div>
-          <h4 class="step-card-title">Peyzaj, İskân &amp; Anahtar Teslim</h4>
-          <p class="step-card-text">
-            Lüks iç mimari tamamlanır, otopark ve bahçe peyzajı düzenlenir, belediye iskân belgesi alınarak yeni eviniz anahtar teslim edilir.
-          </p>
-        </div>
-
-      </div>
-
-      <div class="text-center mt-5">
-        <a href="#iletisim" class="btn-canik-primary">
-          <i class="fas fa-flag-checkered"></i>
-          <span>Sürecinizi Başlatmak İçin Başvurun</span>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       BAŞVURU & İLETİŞİM FORMU (Özel Sosyal Destekler Seçenekli)
-       ========================================================================== -->
-  <section id="iletisim" class="contact-section-wrapper">
-    <div class="container">
-      
-      <div class="text-center mb-5">
-        <span class="section-pill-badge">
-          <i class="fas fa-paper-plane"></i> Hemen İletişime Geçin
-        </span>
-        <h2 class="section-main-title">Ücretsiz Keşif &amp; Kentsel Dönüşüm Başvurusu</h2>
-        <p class="section-main-subtitle">
-          Binanızın imar durumunu inceleyelim, B 3 sınıfı maliyetinizi ve Yarısı Bizden desteğinizi hesaplayıp size özel teklifimizi sunalım.
-        </p>
-      </div>
-
-      <div class="row g-5">
-        
-        <!-- Sol: İletişim Formu -->
-        <div class="col-lg-7">
-          <div class="application-form-card">
-            <h4 class="fw-bold text-dark mb-4">
-              <i class="fas fa-edit text-success me-2"></i> Başvuru Formu
-            </h4>
-
-            <form id="canikApplicationForm">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="formName" class="form-label small fw-bold">Adınız Soyadınız *</label>
-                  <input type="text" id="formName" class="form-control-custom" placeholder="Örn: Ahmet Yılmaz" required>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="formPhone" class="form-label small fw-bold">Telefon Numaranız *</label>
-                  <input type="tel" id="formPhone" class="form-control-custom" placeholder="05XX XXX XX XX" required>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="formDistrict" class="form-label small fw-bold">Binanızın Bulunduğu İlçe / Semt *</label>
-                  <input type="text" id="formDistrict" class="form-control-custom" placeholder="Örn: Esenyurt, Kartal, Bağcılar..." required>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="formService" class="form-label small fw-bold">Hizmet Talebiniz *</label>
-                  <select id="formService" class="form-select-custom">
-                    <option value="B 3 Sınıfı Kentsel Dönüşüm" selected>B 3 Sınıfı Kentsel Dönüşüm (33.900 TL/m² Taban)</option>
-                    <option value="Kat Karşılığı İnşaat">Kat Karşılığı İnşaat Yapımı</option>
-                    <option value="Anahtar Teslim Müteahhitlik">Anahtar Teslim İnşaat &amp; Taahhüt</option>
-                    <option value="Mimari Proje Tasarım & Ruhsat">Mimari &amp; Statik Proje Tasarımı</option>
-                    <option value="Yıkım & Hafriyat / İksa">Yıkım, Hafriyat &amp; İksa Çalışmaları</option>
-                    <option value="Peyzaj & Çevre Düzenleme">Peyzaj &amp; Çevre Düzenleme</option>
-                  </select>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="formM2" class="form-label small fw-bold">Tahmini Arsa / İnşaat m²</label>
-                  <input type="number" id="formM2" class="form-control-custom" placeholder="Örn: 850">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="formUnits" class="form-label small fw-bold">Mevcut Daire / Hak Sahibi Sayısı</label>
-                  <input type="number" id="formUnits" class="form-control-custom" placeholder="Örn: 8">
-                </div>
-
-                <!-- Özel Sosyal Destek Seçenekleri -->
-                <div class="col-12">
-                  <div class="p-3 bg-light rounded-3 border">
-                    <span class="d-block fw-bold small text-dark mb-2">Özel Durum Bildirimi (Varsa İşaretleyiniz):</span>
-                    <div class="form-check mb-2">
-                      <input class="form-check-input" type="checkbox" id="formSehitGazi">
-                      <label class="form-check-label small fw-semibold text-danger" for="formSehitGazi">
-                        🎖️ Şehit / Gazi Ailesiyiz (Yapım ücreti talep edilmez, kira giderleri tam karşılanır)
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="formLowIncome">
-                      <label class="form-check-label small fw-semibold text-success" for="formLowIncome">
-                        💼 Hane Gelirimiz 30.000 TL'nin Altındadır (Kira yardımı tam yapılır)
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <label for="formMessage" class="form-label small fw-bold">Binanız Hakkında Notlar / Sorularınız</label>
-                  <textarea id="formMessage" rows="3" class="form-control-custom" placeholder="Ada/parsel bilgisi, bina yaşı, özel talepleriniz..."></textarea>
-                </div>
-
-                <div class="col-12 mt-4">
-                  <button type="submit" class="btn-canik-primary w-100 py-3 fs-6">
-                    <i class="fas fa-paper-plane me-2"></i>
-                    <span>Talebi Gönder &amp; WhatsApp ile İletişime Geç</span>
-                  </button>
-                  <small class="text-muted d-block text-center mt-2">
-                    <i class="fas fa-lock text-success me-1"></i> Bilgileriniz 6698 sayılı KVKK kapsamında gizli tutulur.
-                  </small>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <!-- Sağ: Kurumsal İletişim Bilgileri -->
-        <div class="col-lg-5">
-          <div class="contact-info-card">
-            <div>
-              <h4 class="fw-bold mb-2 text-white">Canikoğlu &amp; Topçu Mimarlık</h4>
-              <p class="small text-white-50 mb-4">
-                <strong>Ticari Unvan:</strong><br>
-                CANİKOĞLU &amp; TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ.
-              </p>
-
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <i class="fas fa-phone-alt"></i>
-                </div>
-                <div class="contact-info-text">
-                  <h5>Müşteri Hizmetleri &amp; Keşif Hattı</h5>
-                  <a href="tel:08503003400">0850 300 34 00</a>
-                  <span class="d-block small text-white-50">Hafta içi &amp; Cumartesi 08:30 - 19:30</span>
-                </div>
-              </div>
-
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="contact-info-text">
-                  <h5>Doğrudan WhatsApp Hattı</h5>
-                  <a href="https://wa.me/905320000000" target="_blank">+90 532 000 00 00</a>
-                  <span class="d-block small text-white-50">Anında şantiye ve teklif bilgilendirmesi</span>
-                </div>
-              </div>
-
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-info-text">
-                  <h5>Kurumsal E-Posta</h5>
-                  <a href="mailto:info@canikogluinsaat.com">info@canikogluinsaat.com</a>
-                  <span class="d-block small text-white-50">Mimari proje ve şartname gönderimi</span>
-                </div>
-              </div>
-
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <i class="fas fa-location-dot"></i>
-                </div>
-                <div class="contact-info-text">
-                  <h5>Merkez Ofis &amp; Şantiye Koordinasyon</h5>
-                  <p>Bağcılar / İstanbul — Güneşli, Esenyurt &amp; Kartal Şantiyeleri</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-4 border-top border-success-subtle">
-              <span class="small d-block text-white-50 mb-2">Sosyal Medyada Biz:</span>
-              <div class="d-flex gap-2">
-                <a href="#" class="social-circle-link"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-circle-link"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-circle-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-circle-link"><i class="fab fa-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="row g-4 align-items-start">
-        
-        <!-- Logo & Hakkında -->
-        <div class="col-lg-4">
-          <div class="mb-3">
-            <img src="assets/images/logo-white.svg" alt="Canikoğlu & Topçu Mimarlık Logo" style="height: 48px;">
-          </div>
-          <p class="footer-desc">
-            <strong>CANİKOĞLU &amp; TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ.</strong><br>
-            B 3 sınıfı depreme dayanıklı, mimari proje tasarımdan anahtar teslime ve peyzaja kadar kentsel dönüşümde güvenilir çözüm ortağınız.
-          </p>
-          <div class="d-flex align-items-center gap-2">
-            <span class="badge bg-success-subtle text-success p-2 px-3 fw-bold">
-              <i class="fas fa-shield-alt me-1"></i> T.C. Bakanlık Onaylı Süreç
-            </span>
-          </div>
-        </div>
-
-        <!-- Hızlı Bağlantılar -->
-        <div class="col-6 col-lg-2">
-          <h5 class="footer-heading">Kurumsal</h5>
-          <ul class="footer-links">
-            <li><a href="#anasayfa"><i class="fas fa-angle-right"></i> Anasayfa</a></li>
-            <li><a href="#hizmetler"><i class="fas fa-angle-right"></i> Hizmetlerimiz</a></li>
-            <li><a href="#projeler"><i class="fas fa-angle-right"></i> Şantiyelerimiz</a></li>
-            <li><a href="#surec"><i class="fas fa-angle-right"></i> 8 Adımda Süreç</a></li>
-            <li><a href="#sosyal-destek"><i class="fas fa-angle-right"></i> Sosyal Destekler</a></li>
-            <li><a href="#iletisim"><i class="fas fa-angle-right"></i> İletişim</a></li>
-          </ul>
-        </div>
-
-        <!-- Faaliyet Alanları -->
-        <div class="col-6 col-lg-3">
-          <h5 class="footer-heading">Hizmetlerimiz</h5>
-          <ul class="footer-links">
-            <li><a href="#hizmetler"><i class="fas fa-angle-right"></i> B 3 Sınıfı Kentsel Dönüşüm</a></li>
-            <li><a href="#hizmetler"><i class="fas fa-angle-right"></i> Mimari &amp; Statik Tasarım</a></li>
-            <li><a href="#hizmetler"><i class="fas fa-angle-right"></i> Yıkım &amp; Zemin İksa</a></li>
-            <li><a href="#hizmetler"><i class="fas fa-angle-right"></i> Depreme Dayanıklı Kaba Yapı</a></li>
-            <li><a href="#hizmetler"><i class="fas fa-angle-right"></i> Anahtar Teslim İnce İşler</a></li>
-            <li><a href="#hizmetler"><i class="fas fa-angle-right"></i> Peyzaj &amp; Çevre Düzenleme</a></li>
-            <li><a href="#hesaplama"><i class="fas fa-angle-right"></i> Yarısı Bizden Kampanyası</a></li>
-          </ul>
-        </div>
-
-        <!-- İletişim Özeti -->
-        <div class="col-lg-3">
-          <h5 class="footer-heading">Merkez Koordinasyon</h5>
-          <p class="small text-white-50 mb-2">
-            <i class="fas fa-map-marker-alt text-success me-2"></i> İstanbul Şantiyeleri (Bağcılar, Esenyurt, Kartal)
-          </p>
-          <p class="small text-white-50 mb-2">
-            <i class="fas fa-phone text-success me-2"></i> 0850 300 34 00
-          </p>
-          <p class="small text-white-50 mb-3">
-            <i class="fas fa-envelope text-success me-2"></i> info@canikogluinsaat.com
-          </p>
-          <a href="#iletisim" class="btn btn-outline-light btn-sm w-100 fw-bold">
-            <i class="fas fa-map-pin me-1"></i> Keşif Randevusu Al
-          </a>
-        </div>
-
-      </div>
-
-      <!-- Footer Alt Satır -->
-      <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
-        <div>
-          &copy; 2026 Canikoğlu &amp; Topçu Mimarlık İnş. Tic. Turzm. Kentsel Dönüşüm Ltd. Şti. Tüm hakları saklıdır.
-        </div>
-        <div class="d-flex gap-3 mt-2 mt-md-0">
-          <a href="#" class="text-white-50" data-bs-toggle="modal" data-bs-target="#kvkkModal">KVKK Aydınlatma Metni</a>
-          <span class="text-white-50">•</span>
-          <a href="#" class="text-white-50" data-bs-toggle="modal" data-bs-target="#kvkkModal">Çerez Politikası</a>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- ==========================================================================
-       MOBİL ALT SABİT MENÜ (Evveko Mobil Uygulama Deneyimi)
-       ========================================================================== -->
-  <nav class="mobile-sticky-bottom-nav">
-    <a href="#anasayfa" class="m-nav-btn active">
-      <i class="fas fa-house"></i>
-      <span>Anasayfa</span>
-    </a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANİKOĞLU &amp; TOPÇU MİMARLIK | İstanbul Kentsel Dönüşüm &amp; B 3 Sınıfı Proje</title>
     
-    <a href="#projeler" class="m-nav-btn">
-      <i class="fas fa-building"></i>
-      <span>Şantiyeler</span>
-    </a>
+    <!-- SEO & Metadata -->
+    <meta name="description" content="CANİKOĞLU &amp; TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ. — İstanbul genelinde depreme dayanıklı B 3 sınıfı kentsel dönüşüm, mimari proje, zemin iksa ve anahtar teslim müteahhitlik hizmetleri.">
+    <meta name="keywords" content="Canikoğlu Topçu Mimarlık, Kentsel Dönüşüm, B 3 Sınıfı Proje, Yarısı Bizden Kampanyası, Depreme Dayanıklı Bina, İstanbul Müteahhitlik, Mimari Ruhsat Projesi">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="CANİKOĞLU &amp; TOPÇU MİMARLIK | İstanbul Kentsel Dönüşüm &amp; B 3 Sınıfı Proje">
+    <meta property="og:description" content="Köklü mimari ve inşaat tecrübesiyle depreme dayanıklı modern konut projeleri, B 3 yapı sınıfı şeffaf maliyet ve Yarısı Bizden devlet destekli kentsel dönüşüm.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kentsel-theta.vercel.app/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Satisfy&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheets (Ekşioğlu Life Architecture) -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/anasayfa.css">
 
-    <!-- Ortadaki Büyük Vurgulu Buton -->
-    <a href="#iletisim" class="m-nav-center-action">
-      <div class="m-nav-center-icon">
-        <i class="fas fa-house-chimney-medical"></i>
-      </div>
-      <span class="m-nav-center-label">Başvur</span>
-    </a>
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "CANİKOĞLU & TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ.",
+      "url": "https://kentsel-theta.vercel.app/",
+      "logo": "https://kentsel-theta.vercel.app/assets/images/logo.svg",
+      "description": "Depreme dayanıklı B 3 sınıfı kentsel dönüşüm, mimari proje çizimi, fore kazık zemin iksa ve anahtar teslim inşaat hizmetleri.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "İstanbul",
+        "addressCountry": "TR"
+      },
+      "telephone": "+90-532-000-0000"
+    }
+    </script>
+</head>
+<body class="is-homepage">
 
-    <a href="#hesaplama" class="m-nav-btn">
-      <i class="fas fa-calculator"></i>
-      <span>Hesapla</span>
-    </a>
-
-    <a href="https://wa.me/905320000000" target="_blank" class="m-nav-btn text-success">
-      <i class="fab fa-whatsapp"></i>
-      <span>WhatsApp</span>
-    </a>
-  </nav>
-
-  <!-- ==========================================================================
-       WHATSAPP CANLI SOHBET BALONU (Floating Action Button)
+    <!-- ==========================================================================
+       Site Header (Ekşioğlu Life Exact Style)
        ========================================================================== -->
-  <a href="https://wa.me/905320000000?text=Merhaba%20Caniko%C4%9Flu%20%26%20Top%C3%A7u%20Mimarl%C4%B1k%2C%20kentsel%20d%C3%B6n%C3%BC%C5%9F%C3%BCm%20ve%20mimari%20proje%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum." 
-     target="_blank" 
-     class="whatsapp-floating-bubble" 
-     title="WhatsApp ile Canlı Bilgi Al">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    <header class="site-header" role="banner">
+        <div class="main-header">
+            <div class="main-header__container">
+                <!-- Brand Logo (White on transparent hero, Colored on sticky) -->
+                <div class="main-header__logo">
+                    <a href="#anasayfa" class="custom-logo-link" rel="home" aria-label="Canikoğlu ve Topçu Mimarlık">
+                        <img src="assets/images/logo-white.svg" class="main-header__logo-white" alt="Canikoğlu &amp; Topçu Mimarlık">
+                        <img src="assets/images/logo.svg" class="main-header__logo-default" alt="Canikoğlu &amp; Topçu Mimarlık">
+                    </a>
+                </div>
 
-  <!-- ==========================================================================
-       PROJE DETAY & RESİM BÜYÜTME LIGHTBOX MODALI
-       ========================================================================== -->
-  <div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content modal-content-custom">
-        <div class="modal-header modal-header-custom">
-          <div>
-            <h5 class="modal-title fw-bold text-white mb-0" id="modalProjTitle">Proje Başlığı</h5>
-            <small class="text-white-50" id="modalProjLoc"><i class="fas fa-map-marker-alt me-1"></i> Konum</small>
-          </div>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
-        </div>
-        <div class="modal-body modal-body-custom">
-          <div class="mb-4 rounded overflow-hidden shadow-sm position-relative">
-            <img src="" id="modalProjImg" alt="Proje Görseli" class="w-100" style="max-height: 420px; object-fit: cover;">
-            <div class="position-absolute top-0 start-0 m-3">
-              <span id="modalProjBadge" class="badge bg-success p-2 px-3 fs-6">Durum</span>
+                <!-- Navigation & Action -->
+                <div class="main-header__right">
+                    <nav class="site-navigation" aria-label="Ana Menü">
+                        <button class="site-navigation__toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Menüyü Aç/Kapat">
+                            <span class="screen-reader-text">Menü</span>
+                            <span class="site-navigation__toggle-icon" aria-hidden="true"></span>
+                        </button>
+
+                        <div class="site-navigation__overlay" aria-hidden="true"></div>
+
+                        <ul id="primary-menu" class="site-navigation__menu">
+                            <li><a href="#anasayfa">Anasayfa</a></li>
+                            <li><a href="#kurumsal">Kurumsal</a></li>
+                            <li><a href="#kentsel-donusum">Kentsel Dönüşüm &amp; B3</a></li>
+                            <li><a href="#tamamlanan-projeler">Projelerimiz</a></li>
+                            <li><a href="#uzmanliklar">Uzmanlıklar</a></li>
+                            <li><a href="#rehber">Rehber</a></li>
+                            <li><a href="#iletisim">İletişim</a></li>
+                        </ul>
+                    </nav>
+
+                    <a href="#kentsel-donusum" class="header-contact-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                            <line x1="8" y1="6" x2="16" y2="6"></line>
+                            <line x1="8" y1="10" x2="16" y2="10"></line>
+                            <line x1="8" y1="14" x2="12" y2="14"></line>
+                        </svg>
+                        <span>Maliyet Hesapla</span>
+                    </a>
+                </div>
             </div>
-          </div>
-
-          <h5 class="fw-bold mb-2">Şantiye ve İmalat Kapsamı</h5>
-          <p id="modalProjScope" class="text-muted mb-4"></p>
-
-          <h6 class="fw-bold mb-3">Teknik Özellikler</h6>
-          <div class="row g-2 mb-4" id="modalProjSpecs"></div>
-
-          <div class="d-flex gap-2 justify-content-end">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
-            <a href="#iletisim" class="btn-canik-primary" data-bs-dismiss="modal">
-              <i class="fas fa-city me-1"></i> Benim Binam İçin Teklif Al
-            </a>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </header>
 
-  <!-- ==========================================================================
-       KVKK VE GİZLİLİK POLİTİKASI MODALI
+    <main class="site-main">
+
+        <!-- ==========================================================================
+           1. Hero Slider (Ekşioğlu Life Exact Style)
+           ========================================================================== -->
+        <section class="hero-slider" id="anasayfa">
+            <div class="hero-slider__container">
+                <!-- Slide 1: Esenyurt Rezidans & Kentsel Dönüşüm -->
+                <div class="hero-slider__slide active" style="background-image: url('assets/images/proje-esenyurt-rezidans.jpeg');">
+                    <div class="hero-slider__overlay"></div>
+                    <div class="hero-slider__content">
+                        <span class="hero-slider__tag">Geleceğin Güvenli Yaşam Alanları</span>
+                        <h1 class="hero-slider__title">DEPREME DAYANIKLI B 3 SINIFI KENTSEL DÖNÜŞÜM PROJELERİ</h1>
+                        <p class="hero-slider__slogan">Radye jeneral temel, C35 yüksek dayanımlı betonarme ve A'dan Z'ye mimari ruhsat projeleriyle İstanbul'da sağlam temellere hayat veriyoruz.</p>
+                        <div class="hero-slider__actions">
+                            <a href="#kentsel-donusum" class="hero-slider__button">Maliyetini Hemen Hesapla</a>
+                            <a href="#" class="hero-slider__button hero-slider__button--outline" data-project="esenyurt-rezidans">Projeyi İncele</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Başakşehir 17.000 Kişilik Kompleks & Stadyum -->
+                <div class="hero-slider__slide" style="background-image: url('assets/images/proje-basaksehir-stadyum.jpeg');">
+                    <div class="hero-slider__overlay"></div>
+                    <div class="hero-slider__content">
+                        <span class="hero-slider__tag">Büyük Ölçekli Mühendislik Başarısı</span>
+                        <h1 class="hero-slider__title">PREKAST BETONARME &amp; 72M UZAY ÇATI MÜHENDİSLİĞİ</h1>
+                        <p class="hero-slider__slogan">17.000 kişilik stadyum tribün elemanları, dev açıklıklı çelik uzay kafes çatı sistemleri ve üstün statik mühendislik güvencesi.</p>
+                        <div class="hero-slider__actions">
+                            <a href="#tamamlanan-projeler" class="hero-slider__button">Referanslarımızı Görün</a>
+                            <a href="#" class="hero-slider__button hero-slider__button--outline" data-project="basaksehir-stadyum">Teknik Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Cerrahpaşa Çelik Yapı Hastane Kompleksi -->
+                <div class="hero-slider__slide" style="background-image: url('assets/images/proje-cerrahpasa-hastane.jpeg');">
+                    <div class="hero-slider__overlay"></div>
+                    <div class="hero-slider__content">
+                        <span class="hero-slider__tag">Mimari Vizyon &amp; Ağır Çelik</span>
+                        <h1 class="hero-slider__title">SİSMİK DİRENÇLİ AĞIR YAPISAL ÇELİK KONSTRÜKSİYON</h1>
+                        <p class="hero-slider__slogan">Cerrahpaşa Tıp Fakültesi yangın kaçış ve çelik iskelet yapısında uygulanan yüksek dayanımlı endüstriyel mühendislik taahhütleri.</p>
+                        <div class="hero-slider__actions">
+                            <a href="#iletisim" class="hero-slider__button">Hemen Teklif Alın</a>
+                            <a href="#" class="hero-slider__button hero-slider__button--outline" data-project="cerrahpasa-hastane">Şantiye İncelemesi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Nav Controls -->
+            <button class="hero-slider__nav hero-slider__nav--prev" aria-label="Önceki Slayt">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="hero-slider__nav hero-slider__nav--next" aria-label="Sonraki Slayt">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
+            <!-- Slider Dots -->
+            <div class="hero-slider__dots">
+                <button class="hero-slider__dot active" aria-label="Slayt 1"></button>
+                <button class="hero-slider__dot" aria-label="Slayt 2"></button>
+                <button class="hero-slider__dot" aria-label="Slayt 3"></button>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           2. Alt-Hero 3-Kolonlu Şerit (Ekşioğlu Life Birebir Karşılığı)
+           ========================================================================== -->
+        <section class="alt-hero">
+            <div class="alt-hero__container">
+                <div class="alt-hero__col alt-hero__col--left">
+                    <span class="alt-hero__left-title">
+                        <small>Canikoğlu &amp; Topçu</small>
+                        MİMARLIK &amp; İNŞAAT
+                    </span>
+                </div>
+
+                <div class="alt-hero__col alt-hero__col--center">
+                    <span class="alt-hero__center-title">Çiziyor, Planlıyor,<br>İnşa Ediyoruz</span>
+                </div>
+
+                <div class="alt-hero__col alt-hero__col--right">
+                    <div class="alt-hero__right-text">
+                        A'dan Z'ye mimari proje ruhsatı, zemin iksa ve sismik statik tasarımdan anahtar teslime...
+                        <br><br>
+                        Her çizgimizde mimari vizyon, her taşımızda sarsılmaz mühendislik güveni var.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           3. Kurumsal / Hakkımızda Bölümü (Ekşioğlu Life Exact Structure)
+           ========================================================================== -->
+        <section class="about-section" id="kurumsal">
+            <div class="about-section__container">
+                <div class="about-section__left">
+                    <span class="about-section__subtitle">Canikoğlu &amp; Topçu Mimarlık</span>
+                    <h2 class="about-section__title">
+                        Köklü Mimari &amp; İnşaat Tecrübesi
+                        <span>Kalite, Başarı Ve Güven</span>
+                    </h2>
+                    <p class="about-section__text">
+                        CANİKOĞLU &amp; TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ., İstanbul genelinde kentsel dönüşüm, mimari projelendirme, derin kazı iksa ve anahtar teslim depreme dayanıklı konut üretiminde uzmanlaşmış kurumsal bir mimarlık ve müteahhitlik şirketidir.
+                    </p>
+                    <p class="about-section__text about-section__text--secondary">
+                        Tüm projelerimizde Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın B 3 yapı sınıfı standartlarını ve en güncel Türkiye Bina Deprem Yönetmeliği kriterlerini ödünsüz uyguluyoruz.
+                    </p>
+
+                    <div class="about-section__divider"></div>
+
+                    <div class="about-section__bottom">
+                        <a href="#kentsel-donusum" class="about-section__button">Kentsel Dönüşüm Süreci</a>
+
+                        <div class="about-section__contact">
+                            <div class="about-section__contact-icon">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="about-section__contact-info">
+                                <span class="about-section__contact-label">Doğrudan Mimar Hattı</span>
+                                <a href="tel:02120000000" class="about-section__contact-phone">0 (212) 000 00 00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section__right">
+                    <div class="about-section__image-wrapper">
+                        <div class="about-section__image-bg"></div>
+                        <div class="about-section__image-inner">
+                            <img src="assets/images/proje-kartal-yurt.jpeg" alt="Canikoğlu ve Topçu Mimarlık Kartal Projesi" class="about-section__image">
+                        </div>
+                        <div class="about-section__overlay">
+                            <div class="about-section__overlay-number">B 3</div>
+                            <div class="about-section__overlay-text">Bakanlık Standartlarında<br>1. Sınıf Apartman İmalatı</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           4. Alternatifli Özellik Blokları (Ekşioğlu Life Exact Layout)
+           ========================================================================== -->
+        <!-- Feature 1: Görsel Solda -->
+        <section class="features-item features-item--img-left" id="uzmanliklar">
+            <div class="features-item__slogan-wrap">
+                <span class="features-item__slogan">Değeri Katlanan Stratejik Projeler</span>
+            </div>
+
+            <div class="features-item__row">
+                <div class="features-item__image-col">
+                    <div class="features-item__image-inner">
+                        <img src="assets/images/proje-zeytinburnu-iksa.jpeg" alt="Zeytinburnu Derin Kazı İksa ve Fore Kazık Şantiyesi" class="features-item__image">
+                    </div>
+                </div>
+
+                <div class="features-item__text-col">
+                    <h2 class="features-item__title">Her Gün <span>Artan</span> Değer &amp; <span>Çoğalan</span> Yatırım</h2>
+                    <p class="features-item__text">
+                        Zemin mekaniği ve derin temel mühendisliğinde sıfır toleransla çalışıyoruz. Zeytinburnu Vadi Rezidans projemizde uyguladığımız -18 metre derin kazı ve 320 adet donatılı fore kazık sistemi gibi, her projemizde yapının ömrünü ve değerini nesiller boyu garanti altına alıyoruz.
+                    </p>
+                    <p class="features-item__text">
+                        Yılların verdiği tecrübe ve sektördeki köklü birikimimizle, mülk sahiplerinin geleceğini en değerli lokasyonlarda, sarsılmaz mühendislik altyapısıyla inşa ediyoruz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 2: Görsel Sağda -->
+        <section class="features-item features-item--img-right">
+            <div class="features-item__slogan-wrap">
+                <span class="features-item__slogan">Prestijli ve Ayrıcalıklı Yaşam Alanları</span>
+            </div>
+
+            <div class="features-item__row features-item__row--reverse">
+                <div class="features-item__image-col">
+                    <div class="features-item__image-inner">
+                        <img src="assets/images/proje-marmara-vizyon.jpeg" alt="Marmara Vizyon Şantiye Sahası" class="features-item__image">
+                    </div>
+                </div>
+
+                <div class="features-item__text-col">
+                    <h2 class="features-item__title">Hayal Ettiğiniz <span>Huzurlu Yaşamı Gerçeğe</span> Çeviriyoruz</h2>
+                    <p class="features-item__text">
+                        Güngören ve Bahçelievler şantiyelerimizde olduğu gibi, riskli yapıların kontrollü yıkımından başlayıp modern rezidans standartlarında teslimine kadar tüm süreci tek elden yönetiyoruz.
+                    </p>
+                    <p class="features-item__text">
+                        A1 yanmaz taşyünü ses ve ısı yalıtımı, kapalı otopark, geniş balkonlar ve ferah peyzaj alanlarıyla donatılmış yapılarımızda, günlük hayatınızı kolaylaştıran estetik ve fonksiyonel mekanlar yaratıyoruz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature 3: Görsel Solda + Grafik İlerleme Barları (Ekşioğlu Life Exact Format) -->
+        <section class="features-item features-item--img-left-graphic">
+            <div class="features-item__row">
+                <div class="features-item__image-col">
+                    <div class="features-item__image-inner">
+                        <img src="assets/images/proje-esenyurt-rezidans.jpeg" alt="Canikoğlu ve Topçu Şantiye Sahası" class="features-item__image">
+                    </div>
+
+                    <!-- Ekşioğlu Life Graphic Progress Bars -->
+                    <div class="features-item__bars">
+                        <div class="features-item__bar">
+                            <div class="features-item__bar-header">
+                                <span class="features-item__bar-label">Deprem Güvenliği &amp; B 3 Statik Standart</span>
+                                <span class="features-item__bar-percent">100%</span>
+                            </div>
+                            <div class="features-item__bar-track">
+                                <div class="features-item__bar-fill" data-width="100%"></div>
+                            </div>
+                        </div>
+
+                        <div class="features-item__bar">
+                            <div class="features-item__bar-header">
+                                <span class="features-item__bar-label">Proje Planına &amp; Teslim Tarihine Sadakat</span>
+                                <span class="features-item__bar-percent">99%</span>
+                            </div>
+                            <div class="features-item__bar-track">
+                                <div class="features-item__bar-fill" data-width="99%"></div>
+                            </div>
+                        </div>
+
+                        <div class="features-item__bar">
+                            <div class="features-item__bar-header">
+                                <span class="features-item__bar-label">Yatırım Değer Artışı &amp; Prim Potansiyeli</span>
+                                <span class="features-item__bar-percent">95%</span>
+                            </div>
+                            <div class="features-item__bar-track">
+                                <div class="features-item__bar-fill" data-width="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="features-item__bar">
+                            <div class="features-item__bar-header">
+                                <span class="features-item__bar-label">Şehit &amp; Gazi Ailelerine Dönüşüm Desteği</span>
+                                <span class="features-item__bar-percent">100%</span>
+                            </div>
+                            <div class="features-item__bar-track">
+                                <div class="features-item__bar-fill" data-width="100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-item__text-col">
+                    <div class="features-item__slogan-wrap">
+                        <span class="features-item__slogan">Kurumsal Güvence &amp; Sosyal Taahhütler</span>
+                    </div>
+
+                    <h2 class="features-item__title">İhtiyacınız Olan <span>Her Şey Tek Adreste</span></h2>
+                    <p class="features-item__text">
+                        Mimarlık ve mühendislik ofisimiz ile şantiye operasyonlarımızın tek çatı altında birleştiği entegre yapımız sayesinde, kentsel dönüşümde hak sahiplerinin tüm bürokratik, hukuki ve yapım süreçlerini eksiksiz karşılıyoruz.
+                    </p>
+
+                    <div class="features-item__divider"></div>
+
+                    <!-- 4 Competencies Grid -->
+                    <div class="features-item__icons-grid">
+                        <div class="features-item__icon-box">
+                            <svg class="features-item__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h6M9 13h6M9 17h6"/>
+                            </svg>
+                            <span class="features-item__icon-label">Mimari Ruhsat &amp; Proje</span>
+                        </div>
+
+                        <div class="features-item__icon-box">
+                            <svg class="features-item__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"><polyline points="2 17 12 22 22 17"><polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                            <span class="features-item__icon-label">Zemin İksa &amp; Fore Kazık</span>
+                        </div>
+
+                        <div class="features-item__icon-box">
+                            <svg class="features-item__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                            <span class="features-item__icon-label">B 3 Kaba &amp; Çelik Yapı</span>
+                        </div>
+
+                        <div class="features-item__icon-box">
+                            <svg class="features-item__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 2l-2 2m-6 6l7 7M2 22l7-7m6-6l-3-3L3 17v4h4l9-9z"/>
+                            </svg>
+                            <span class="features-item__icon-label">Anahtar Teslim İnce İş</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           5. Kentsel Dönüşüm & B 3 Sınıfı Fiyatlandırma Modülü
+           ========================================================================== -->
+        <section class="kentsel-b3-section" id="kentsel-donusum">
+            <div class="kentsel-b3__header">
+                <span class="kentsel-b3__subtitle">Şeffaf Maliyet &amp; Devlet Desteği</span>
+                <h2 class="kentsel-b3__title">B 3 SINIFI <span>KENTSEL DÖNÜŞÜM</span> VE MALİYET STANDARTLARI</h2>
+                <p class="kentsel-b3__desc">
+                    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı Yapı Yaklaşık Birim Maliyetleri tebliğince belirlenen <strong>III. Sınıf B Grubu Yapılar</strong> (asansörlü, otoparklı, C30/C35 beton, ST III çelikli konutlar) standardında şeffaf birim fiyatlandırma ve devlet destekli kentsel dönüşüm modelimiz.
+                </p>
+            </div>
+
+            <!-- 3 Highlight Cards -->
+            <div class="kentsel-b3__cards-grid">
+                <!-- Card 1: B3 Maliyet -->
+                <div class="kentsel-card kentsel-card--highlight">
+                    <span class="kentsel-card__badge">Bakanlık Tebliği</span>
+                    <svg class="kentsel-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <h3 class="kentsel-card__title">B 3 Sınıfı Taban Fiyat</h3>
+                    <div class="kentsel-card__price">33.900 ₺ <small>/ m²</small></div>
+                    <p class="kentsel-card__text">
+                        Yüksek deprem güvenlikli C30/C35 betonarme, nervürlü donatı, radye jeneral temel, asansör ve yangın yönetmeliğine tam uyumlu 1. sınıf inşaat imalatı.
+                    </p>
+                    <ul class="kentsel-card__list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Mimari Ruhsat &amp; Statik Hesaplar Dahil</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Yıkım, Hafriyat &amp; İksa Güvencesi</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> A1 Yangın Yalıtımlı Dış Cephe</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Devlet Desteği (Yarısı Bizden) -->
+                <div class="kentsel-card">
+                    <span class="kentsel-card__badge">Yarısı Bizden</span>
+                    <svg class="kentsel-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/>
+                    </svg>
+                    <h3 class="kentsel-card__title">Devlet Finansman Desteği</h3>
+                    <div class="kentsel-card__price">1.750.000 ₺ <small>/ daire</small></div>
+                    <p class="kentsel-card__text">
+                        Bakanlığın <strong>Yarısı Bizden</strong> kampanyası kapsamında her hak sahibine sağlanan <strong>₺875.000 karşılıksız hibe</strong> ve <strong>₺875.000 düşük faizli kredi</strong> finansmanı.
+                    </p>
+                    <ul class="kentsel-card__list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 875.000 ₺ Karşılıksız Doğrudan Hibe</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 875.000 ₺ Uzun Vadeli Kamu Kredisi</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Başvuru &amp; Evrak Takibi Tarafımızca Yapılır</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Sosyal Sorumluluk & Kutsal Taahhütlerimiz -->
+                <div class="kentsel-card">
+                    <span class="kentsel-card__badge">Sosyal Güvence</span>
+                    <svg class="kentsel-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                    <h3 class="kentsel-card__title">Kutsal Sosyal Taahhütlerimiz</h3>
+                    <div class="kentsel-card__price">%100 <small>Ücretsiz</small></div>
+                    <p class="kentsel-card__text">
+                        Vatanımıza can borcumuz olan şehit ve gazi ailelerimizin evlerini hiçbir yapım ücreti talep etmeksizin yeniliyor, tüm kira masraflarını şirketimizce karşılıyoruz.
+                    </p>
+                    <ul class="kentsel-card__list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Şehit/Gazi Ailelerine %100 Ücretsiz Dönüşüm</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dar Gelirli Ailelere (30.000₺ altı) Tam Kira Yardımı</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Tüm Hak Sahiplerine Taşınma Masraf Desteği</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Interactive B3 Calculator Widget -->
+            <div class="kentsel-calc-wrapper">
+                <div class="kentsel-calc">
+                    <h3 class="kentsel-calc__title">B 3 Sınıfı Kentsel Dönüşüm Maliyet Hesaplayıcı</h3>
+                    <p class="kentsel-calc__subtitle">Binanızın yaklaşık toplam inşaat alanını ve daire sayısını girerek tahmini net maliyet tablosunu anında görüntüleyin.</p>
+
+                    <div class="kentsel-calc__form">
+                        <div class="calc-group">
+                            <label for="calcAlan">Toplam İnşaat Alanı (m²):</label>
+                            <div class="calc-input-wrapper">
+                                <input type="number" id="calcAlan" value="800" min="50" step="10">
+                                <span class="calc-input-suffix">m²</span>
+                            </div>
+                        </div>
+
+                        <div class="calc-group">
+                            <label for="calcDaire">Mevcut / Hedef Daire Sayısı:</label>
+                            <div class="calc-input-wrapper">
+                                <input type="number" id="calcDaire" value="8" min="1" max="200">
+                                <span class="calc-input-suffix">Adet</span>
+                            </div>
+                        </div>
+
+                        <div class="calc-checkboxes">
+                            <label class="calc-checkbox">
+                                <input type="checkbox" id="calcDevlet" checked>
+                                <span><strong>"Yarısı Bizden" Devlet Desteğinden Faydalanmak İstiyorum</strong> (₺1.750.000 / daire hibe &amp; kredi)</span>
+                            </label>
+
+                            <label class="calc-checkbox">
+                                <input type="checkbox" id="calcSehit">
+                                <span><strong>Şehit veya Gazi Ailesi Hak Sahipliği</strong> (%100 Ücretsiz Yapım &amp; Kira Desteği)</span>
+                            </label>
+
+                            <label class="calc-checkbox">
+                                <input type="checkbox" id="calcGelir">
+                                <span><strong>Hane Geliri 30.000 TL Altı Dar Gelir Desteği</strong> (Ekstra Şirket Kira Yardımı)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Calculator Output -->
+                    <div class="calc-results">
+                        <div class="calc-result-item">
+                            <span>Toplam İnşaat Maliyeti</span>
+                            <strong id="resToplamMaliyet">27.120.000 ₺</strong>
+                        </div>
+
+                        <div class="calc-result-item">
+                            <span>Devlet Desteği / Sosyal Muafiyet</span>
+                            <strong id="resDevletDestegi">14.000.000 ₺</strong>
+                        </div>
+
+                        <div class="calc-result-item calc-result-item--final">
+                            <span>Daire Başına Düşen Net Bedel</span>
+                            <strong id="resNetDaireMaliyeti">1.640.000 ₺</strong>
+                        </div>
+                    </div>
+
+                    <div class="kentsel-calc__cta">
+                        <a href="https://wa.me/905320000000" id="calcWhatsAppBtn" target="_blank" rel="noopener" class="kentsel-calc__btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>Bu Hesaplamayı Mimarımıza WhatsApp ile Gönderin</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           6. Tamamlanan Projeler Slider (Ekşioğlu Life Exact Structure)
+           ========================================================================== -->
+        <section class="home-projeler" id="tamamlanan-projeler">
+            <div class="home-projeler__header">
+                <span class="projeler-archive__subtitle">Tamamlanan Referanslarımız</span>
+                <h2 class="projeler-archive__title">HAYATA KAZANDIRDIĞIMIZ PROJELER</h2>
+            </div>
+
+            <div class="home-projeler__slider" id="homeProjelerSlider">
+                <!-- Nav Arrows -->
+                <button class="home-projeler__arrow home-projeler__arrow--prev" id="projPrev" aria-label="Önceki Proje">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="home-projeler__arrow home-projeler__arrow--next" id="projNext" aria-label="Sonraki Proje">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+
+                <div class="home-projeler__track" id="projelerTrack">
+                    <!-- Project 1: Kartal Kız Öğrenci Yurdu -->
+                    <div class="home-projeler__slide active">
+                        <a href="#" class="home-projeler__card" data-project="kartal-yurt">
+                            <img src="assets/images/proje-kartal-yurt.jpeg" alt="Kartal Kız Öğrenci Yurdu Binası" class="home-projeler__card-img">
+                            <div class="home-projeler__card-overlay">
+                                <span class="home-projeler__card-tag">A1 Cephe &amp; İnce İnşaat</span>
+                                <h3 class="home-projeler__card-title">Kartal Kız Öğrenci Yurdu Binası</h3>
+                                <p class="home-projeler__card-desc">Taşyünü yangın yalıtımlı cephe kaplama sistemleri ve mimari ince işler.</p>
+                                <span class="home-projeler__card-btn">Projeyi Görüntüle →</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Project 2: Cerrahpaşa Tıp Fakültesi Çelik Yapı -->
+                    <div class="home-projeler__slide">
+                        <a href="#" class="home-projeler__card" data-project="cerrahpasa-hastane">
+                            <img src="assets/images/proje-cerrahpasa-hastane.jpeg" alt="Cerrahpaşa Çelik Yapı Hastane Projesi" class="home-projeler__card-img">
+                            <div class="home-projeler__card-overlay">
+                                <span class="home-projeler__card-tag">Ağır Yapısal Çelik</span>
+                                <h3 class="home-projeler__card-title">Cerrahpaşa Hastane Çelik Yapı</h3>
+                                <p class="home-projeler__card-desc">Sismik dayanımlı ağır yapısal çelik iskelet ve yangın kaçış sistemleri.</p>
+                                <span class="home-projeler__card-btn">Projeyi Görüntüle →</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Project 3: Başakşehir Stadyum & Spor Kompleksi -->
+                    <div class="home-projeler__slide">
+                        <a href="#" class="home-projeler__card" data-project="basaksehir-stadyum">
+                            <img src="assets/images/proje-basaksehir-stadyum.jpeg" alt="Başakşehir Stadyum ve Spor Kompleksi" class="home-projeler__card-img">
+                            <div class="home-projeler__card-overlay">
+                                <span class="home-projeler__card-tag">Prekast &amp; Uzay Çatı</span>
+                                <h3 class="home-projeler__card-title">Başakşehir 17.000 Kişilik Kompleks</h3>
+                                <p class="home-projeler__card-desc">Prekast betonarme tribün elemanları ve 72 metrelik çelik uzay kafes çatı.</p>
+                                <span class="home-projeler__card-btn">Projeyi Görüntüle →</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Project 4: Zeytinburnu Vadi Rezidans İksa -->
+                    <div class="home-projeler__slide">
+                        <a href="#" class="home-projeler__card" data-project="zeytinburnu-iksa">
+                            <img src="assets/images/proje-zeytinburnu-iksa.jpeg" alt="Zeytinburnu Vadi Rezidans İksa ve Fore Kazık" class="home-projeler__card-img">
+                            <div class="home-projeler__card-overlay">
+                                <span class="home-projeler__card-tag">Zemin İksa &amp; Fore Kazık</span>
+                                <h3 class="home-projeler__card-title">Zeytinburnu Vadi Rezidans İksa</h3>
+                                <p class="home-projeler__card-desc">-18m derin kazı emniyeti, 320 adet donatılı fore kazık ve ankraj mühendisliği.</p>
+                                <span class="home-projeler__card-btn">Projeyi Görüntüle →</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-projeler__footer">
+                <a href="#kentsel-donusum" class="home-projeler__all-btn">Tüm Dönüşüm ve Proje Çözümlerimizi İnceleyin</a>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           7. Yapım Aşamasındaki (Devam Eden) Projeler Izgarası
+           ========================================================================== -->
+        <section class="home-devam" id="devam-eden-projeler">
+            <div class="home-devam__header">
+                <span class="projeler-archive__subtitle">Aktif Şantiyelerimiz</span>
+                <h2 class="projeler-archive__title">YAPIM AŞAMASINDAKİ PROJELER</h2>
+            </div>
+
+            <div class="home-devam__grid">
+                <!-- Project 5: Esenyurt Rezidans Blokları -->
+                <a href="#" class="home-devam__card" data-project="esenyurt-rezidans">
+                    <img src="assets/images/proje-esenyurt-rezidans.jpeg" alt="Esenyurt Kentsel Dönüşüm ve Rezidans Blokları" class="home-devam__card-img">
+                    <div class="home-devam__card-overlay">
+                        <span class="home-devam__badge">Devam Eden Şantiye</span>
+                        <h3 class="home-devam__card-title">Esenyurt Kentsel Dönüşüm &amp; Rezidans Blokları</h3>
+                        <p class="home-devam__card-desc">14 katlı, çift bodrum otoparklı, C35 betonarme taşıyıcı sistem ve radye jeneral temel.</p>
+                    </div>
+                </a>
+
+                <!-- Project 6: Marmara Vizyon Şantiye Sahası -->
+                <a href="#" class="home-devam__card" data-project="marmara-vizyon">
+                    <img src="assets/images/proje-marmara-vizyon.jpeg" alt="Marmara Vizyon Şantiye Sahası" class="home-devam__card-img">
+                    <div class="home-devam__card-overlay">
+                        <span class="home-devam__badge">Devam Eden Şantiye</span>
+                        <h3 class="home-devam__card-title">Marmara Vizyon Şantiye Sahası (Güngören / Bahçelievler)</h3>
+                        <p class="home-devam__card-desc">Riskli yapıların yıkımı sonrası zemin güçlendirme ve B 3 sınıfı kaba inşaat imalatı.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           8. Sektörel Rehber & Güncel Yayınlar
+           ========================================================================== -->
+        <section class="home-blog" id="rehber">
+            <div class="home-blog__header">
+                <span class="projeler-archive__subtitle">Kentsel Dönüşüm Rehberi</span>
+                <h2 class="projeler-archive__title">GÜNCEL BİLGİLENDİRME &amp; MEVZUAT</h2>
+            </div>
+
+            <div class="home-blog__grid">
+                <!-- Blog 1 -->
+                <article class="blog-card">
+                    <div class="blog-card__body">
+                        <span class="blog-card__meta">Teknik Standartlar</span>
+                        <h3 class="blog-card__title">B 3 Sınıfı Proje Nedir? 33.900 TL/m² Birim Maliyet Analizi</h3>
+                        <p class="blog-card__excerpt">
+                            Bakanlık tebliğine göre III. Sınıf B Grubu yapılar, depreme tam dayanıklı asansörlü ve otoparklı konut standartlarını belirler. Malzeme şartnameleri ve maliyet kalemleri hakkında detaylar.
+                        </p>
+                        <a href="#kentsel-donusum" class="blog-card__link">Detayları İnceleyin →</a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card">
+                    <div class="blog-card__body">
+                        <span class="blog-card__meta">Devlet Destekleri</span>
+                        <h3 class="blog-card__title">Yarısı Bizden Kampanyası ile 1.750.000 TL Destek Nasıl Alınır?</h3>
+                        <p class="blog-card__excerpt">
+                            İstanbul'daki kentsel dönüşümde hak sahiplerine sunulan 875 bin TL hibe ve 875 bin TL kredi finansmanının başvuru süreçleri ve firmamızın yürüttüğü ruhsat adımları.
+                        </p>
+                        <a href="#kentsel-donusum" class="blog-card__link">Süreci Öğrenin →</a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card">
+                    <div class="blog-card__body">
+                        <span class="blog-card__meta">Sosyal Taahhüt</span>
+                        <h3 class="blog-card__title">Şehit ve Gazi Ailelerimize %100 Ücretsiz Kentsel Dönüşüm</h3>
+                        <p class="blog-card__excerpt">
+                            Vatanımızın kahramanları için hiçbir yapım ücreti almadan yuvalarını dönüştürüyor, inşaat sürecinde tüm kira giderlerini şirketimizce karşılıyoruz.
+                        </p>
+                        <a href="#iletisim" class="blog-card__link">Hemen Başvurun →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           9. İletişim & Teklif Formu
+           ========================================================================== -->
+        <section class="contact-section" id="iletisim">
+            <div class="contact-section__container">
+                <div class="contact-info">
+                    <h2 class="contact-info__title">Bizimle <span>İletişime</span> Geçin</h2>
+                    <p class="contact-info__text">
+                        Binanızın kentsel dönüşüm potansiyelini öğrenmek, B 3 sınıfı maliyet analizini ücretsiz yaptırmak ve yerinde mimari keşif randevusu almak için uzman kadromuzla iletişime geçebilirsiniz.
+                    </p>
+
+                    <div class="contact-boxes">
+                        <div class="contact-box">
+                            <div class="contact-box__icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-box__label">Merkez Ofis &amp; Şantiye Koordinasyon</span>
+                                <span class="contact-box__val">İstanbul, Türkiye</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-box">
+                            <div class="contact-box__icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-box__label">Telefonla Ulaşın</span>
+                                <a href="tel:02120000000" class="contact-box__val">0 (212) 000 00 00 / 0 (532) 000 00 00</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-box">
+                            <div class="contact-box__icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-box__label">E-Posta</span>
+                                <span class="contact-box__val">info@canikoglutopcu.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="mainContactForm">
+                        <h3 class="contact-form__title">Kentsel Dönüşüm Keşif Talebi</h3>
+                        <p class="contact-form__subtitle">Formu doldurun, yetkili mimarımız 1 saat içinde sizinle iletişime geçsin.</p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cfName">Adınız Soyadınız *</label>
+                                <input type="text" id="cfName" required placeholder="Örn: Ahmet Yılmaz">
+                            </div>
+                            <div class="form-group">
+                                <label for="cfPhone">Telefon Numaranız *</label>
+                                <input type="tel" id="cfPhone" required placeholder="05XX XXX XX XX">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cfTopic">Hizmet Türü *</label>
+                            <select id="cfTopic">
+                                <option value="Kentsel Dönüşüm &amp; B3 Proje">Kentsel Dönüşüm &amp; B 3 Proje</option>
+                                <option value="Yarısı Bizden Başvurusu">Yarısı Bizden Devlet Desteği Başvurusu</option>
+                                <option value="Şehit / Gazi Ailesi Ücretsiz Dönüşüm">Şehit / Gazi Ailesi Ücretsiz Dönüşüm</option>
+                                <option value="Mimari Tasarım &amp; Ruhsat">Mimari Tasarım &amp; Ruhsatlandırma</option>
+                                <option value="Zemin İksa &amp; Fore Kazık">Zemin İksa &amp; Fore Kazık</option>
+                                <option value="Anahtar Teslim İnşaat">Anahtar Teslim İnşaat Taahhüdü</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cfMessage">Binanız / Projeniz Hakkında Notlar</label>
+                            <textarea id="cfMessage" rows="3" placeholder="Örn: Kadıköy'de 8 daireli binamız için kentsel dönüşüm keşfi talep ediyoruz..."></textarea>
+                        </div>
+
+                        <button type="submit" class="contact-form__submit">Talebi Gönder (WhatsApp Entegrasyonlu)</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================================
+       Site Footer (Ekşioğlu Life Exact Layout)
        ========================================================================== -->
-  <div class="modal fade" id="kvkkModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-      <div class="modal-content modal-content-custom">
-        <div class="modal-header modal-header-custom">
-          <h5 class="modal-title fw-bold text-white">KVKK ve Gizlilik Politikası</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
-        </div>
-        <div class="modal-body modal-body-custom small text-muted">
-          <h6 class="fw-bold text-dark">1. Veri Sorumlusu</h6>
-          <p>CANİKOĞLU &amp; TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ. olarak 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında kişisel verilerinizin güvenliğine büyük önem vermekteyiz.</p>
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-main">
+            <div class="footer-main__container">
+                <!-- Col 1: Brand & Socials -->
+                <div class="footer-main__col footer-main__col--brand">
+                    <a href="#anasayfa" class="footer-main__logo-link">
+                        <img src="assets/images/logo-white.svg" alt="Canikoğlu &amp; Topçu Mimarlık" class="footer-main__logo">
+                    </a>
+                    <p class="footer-main__desc">
+                        CANİKOĞLU &amp; TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ., İstanbul'da depreme dayanıklı modern konut projeleri, B 3 sınıfı şeffaf maliyetli kentsel dönüşüm ve güvenilir inşaat taahhüdünün öncü adresidir.
+                    </p>
+                    <div class="footer-main__socials">
+                        <a href="https://wa.me/905320000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
 
-          <h6 class="fw-bold text-dark">2. Kişisel Verilerin İşlenme Amacı</h6>
-          <p>Başvuru formlarımız ve hesaplama araçlarımız üzerinden paylaştığınız ad, telefon, ilçe, arsa ve bina bilgileri yalnızca kentsel dönüşüm keşfi, statik/imar durumu analizi, maliyet tekliflerinin sunulması ve tarafınızla iletişim kurulması amacıyla işlenir.</p>
+                <!-- Col 2: Quick Links -->
+                <div class="footer-main__col">
+                    <h4 class="footer-main__title">Kurumsal</h4>
+                    <ul class="footer-main__menu">
+                        <li><a href="#anasayfa">Anasayfa</a></li>
+                        <li><a href="#kurumsal">Hakkımızda</a></li>
+                        <li><a href="#kentsel-donusum">Kentsel Dönüşüm Modeli</a></li>
+                        <li><a href="#tamamlanan-projeler">Tamamlanan Projeler</a></li>
+                        <li><a href="#devam-eden-projeler">Devam Eden Projeler</a></li>
+                        <li><a href="#iletisim">İletişim &amp; Keşif</a></li>
+                    </ul>
+                </div>
 
-          <h6 class="fw-bold text-dark">3. Çerez (Cookie) Kullanımı</h6>
-          <p>Web sitemizde kullanıcı deneyimini iyileştirmek, hesaplama tercihlerini hatırlamak ve analitik veri toplamak amacıyla çerezler kullanılmaktadır.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Anladım</button>
-        </div>
-      </div>
-    </div>
-  </div>
+                <!-- Col 3: Specialties -->
+                <div class="footer-main__col">
+                    <h4 class="footer-main__title">Uzmanlıklarımız</h4>
+                    <ul class="footer-main__menu">
+                        <li><a href="#uzmanliklar">B 3 Sınıfı Kentsel Dönüşüm</a></li>
+                        <li><a href="#uzmanliklar">Zemin İksa &amp; Fore Kazık</a></li>
+                        <li><a href="#uzmanliklar">Ağır Yapısal Çelik İskelet</a></li>
+                        <li><a href="#uzmanliklar">Prekast Betonarme Mühendisliği</a></li>
+                        <li><a href="#uzmanliklar">Yarısı Bizden Destek Danışmanlığı</a></li>
+                        <li><a href="#uzmanliklar">Şehit &amp; Gazi Sosyal Taahhütleri</a></li>
+                    </ul>
+                </div>
 
-  <!-- ==========================================================================
-       ÇEREZ BİLDİRİM BANNER'I
+                <!-- Col 4: Contact info -->
+                <div class="footer-main__col">
+                    <h4 class="footer-main__title">İletişim &amp; Adres</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>CANİKOĞLU &amp; TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ.<br>İstanbul, Türkiye</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <a href="tel:02120000000">0 (212) 000 00 00 / 0 (532) 000 00 00</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <a href="mailto:info@canikoglutopcu.com">info@canikoglutopcu.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-alt">
+            <div class="footer-alt__container">
+                <div class="footer-alt__copyright">
+                    &copy; 2026 CANİKOĞLU &amp; TOPÇU MİMARLIK İNŞ. TİC. TURZM. KENTSEL DÖNÜŞÜM LTD. ŞTİ. Tüm hakları saklıdır.
+                </div>
+                <div class="footer-alt__links">
+                    <a href="#kentsel-donusum">B 3 Standartları</a>
+                    <a href="#kentsel-donusum">Yarısı Bizden</a>
+                    <a href="#iletisim">Gizlilik ve KVKK</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+       Floating Action Buttons (WhatsApp & Quick Call)
        ========================================================================== -->
-  <div id="cookieConsentBanner" style="display: none; position: fixed; bottom: 85px; left: 20px; right: 20px; max-width: 440px; background: #ffffff; border-radius: 16px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.18); border: 1px solid #e2e8f0; z-index: 1050;">
-    <div class="d-flex align-items-center gap-3 mb-2">
-      <div class="width-36 height-36 rounded-3 bg-warning-subtle text-warning d-flex align-items-center justify-content-center p-2 fs-5">
-        <i class="fa-solid fa-cookie-bite"></i>
-      </div>
-      <h6 class="mb-0 fw-bold text-dark">Gizlilik ve Çerez Tercihi</h6>
+    <div class="floating-actions">
+        <a href="https://wa.me/905320000000?text=Merhaba,%20kentsel%20dönüşüm%20ve%20B3%20proje%20maliyeti%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="float-btn float-btn--whatsapp" aria-label="WhatsApp Destek">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <span class="float-btn__tooltip">WhatsApp'tan Sorun</span>
+        </a>
+        <a href="tel:02120000000" class="float-btn float-btn--phone" aria-label="Hemen Arayın">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="float-btn__tooltip">Hemen Arayın</span>
+        </a>
     </div>
-    <p class="small text-muted mb-3">
-      Deneyiminizi geliştirmek ve kentsel dönüşüm hesaplama araçlarımızı sunmak için çerezler kullanıyoruz.
-    </p>
-    <div class="d-flex gap-2">
-      <button id="btnAcceptCookie" class="btn btn-success btn-sm flex-grow-1 fw-bold">Kabul Et</button>
-      <button onclick="document.getElementById('cookieConsentBanner').style.display='none'" class="btn btn-light btn-sm text-secondary">Kapat</button>
+
+    <!-- ==========================================================================
+       Project Details Popup Modal
+       ========================================================================== -->
+    <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="project-modal__content">
+            <button class="project-modal__close" id="modalClose" aria-label="Pencereyi Kapat">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="project-modal__body">
+                <img src="" alt="" class="project-modal__img" id="modalImg">
+                <div class="project-modal__info">
+                    <span class="project-modal__badge" id="modalBadge"></span>
+                    <h3 class="project-modal__title" id="modalTitle"></h3>
+                    <p class="project-modal__desc" id="modalDesc"></p>
+                    <div class="project-modal__specs" id="modalSpecs"></div>
+                    <div class="project-modal__actions">
+                        <a href="https://wa.me/905320000000" id="modalContactBtn" target="_blank" rel="noopener" class="hero-slider__button">
+                            <span>Bu Proje Hakkında Bilgi Alın</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Canikoğlu & Topçu Mimarlık Özel JS -->
-  <script src="assets/js/main.js"></script>
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

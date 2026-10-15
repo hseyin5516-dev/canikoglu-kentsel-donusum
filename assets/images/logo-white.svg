@@ -1,40 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 76" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 90" width="460" height="90">
   <defs>
-    <linearGradient id="logoEmblemGradW" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4ade80"/>
-      <stop offset="100%" stop-color="#22c55e"/>
+    <linearGradient id="goldGradWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38cbf0"/>
+      <stop offset="100%" stop-color="#1ca8cb"/>
     </linearGradient>
-    <linearGradient id="logoRoofGradW" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24"/>
-      <stop offset="100%" stop-color="#f59e0b"/>
+    <linearGradient id="goldAccentWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d77f"/>
+      <stop offset="100%" stop-color="#d4af37"/>
     </linearGradient>
   </defs>
-
-  <!-- Modern Architectural Emblem -->
-  <g transform="translate(6, 6)">
-    <rect x="2" y="20" width="18" height="44" rx="3.5" fill="url(#logoEmblemGradW)" opacity="0.9"/>
-    <rect x="23" y="8" width="22" height="56" rx="4" fill="url(#logoEmblemGradW)"/>
-    <rect x="48" y="26" width="18" height="38" rx="3.5" fill="url(#logoEmblemGradW)" opacity="0.8"/>
-    
-    <path d="M 0 20 L 34 0 L 68 26" fill="none" stroke="url(#logoRoofGradW)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    
-    <rect x="28" y="16" width="4" height="6" rx="1" fill="#0f172a" opacity="0.7"/>
-    <rect x="36" y="16" width="4" height="6" rx="1" fill="#0f172a" opacity="0.7"/>
-    <rect x="28" y="27" width="4" height="6" rx="1" fill="#0f172a" opacity="0.7"/>
-    <rect x="36" y="27" width="4" height="6" rx="1" fill="#0f172a" opacity="0.7"/>
-    <rect x="28" y="38" width="4" height="6" rx="1" fill="#0f172a" opacity="0.7"/>
-    <rect x="36" y="38" width="4" height="6" rx="1" fill="#0f172a" opacity="0.7"/>
-    
-    <path d="M 5 57 Q 34 68 64 54" fill="none" stroke="url(#logoRoofGradW)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Architectural Icon -->
+  <g transform="translate(10, 8)">
+    <polygon points="36,4 68,22 68,54 36,72 4,54 4,22" fill="none" stroke="url(#goldGradWhite)" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M36,12 L36,64 M20,28 L36,18 L52,28 M20,44 L36,34 L52,44" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="36" cy="12" r="3.5" fill="url(#goldAccentWhite)"/>
+    <rect x="33" y="62" width="6" height="4" fill="url(#goldAccentWhite)"/>
   </g>
 
-  <!-- Kurumsal Tipografi: Beyaz & Parlak Yeşil -->
-  <g transform="translate(86, 0)">
-    <text x="0" y="36" font-family="'Poppins', 'Segoe UI', system-ui, sans-serif" font-size="25" font-weight="800" fill="#ffffff" letter-spacing="0.3">
-      CANİKOĞLU <tspan fill="#fbbf24">&amp;</tspan> TOPÇU
-    </text>
-    <text x="1" y="58" font-family="'Poppins', 'Segoe UI', system-ui, sans-serif" font-size="14.5" font-weight="700" fill="#4ade80" letter-spacing="2.8">
-      MİMARLIK <tspan fill="#94a3b8" font-weight="600" font-size="12.5" letter-spacing="1.5">&amp; İNŞAAT A.Ş.</tspan>
-    </text>
+  <!-- Typography -->
+  <g transform="translate(92, 0)">
+    <text x="0" y="38" font-family="'Teko', 'Poppins', sans-serif" font-size="34" font-weight="700" letter-spacing="2.5" fill="#ffffff">CANİKOĞLU &amp; TOPÇU</text>
+    <text x="0" y="62" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" letter-spacing="4.5" fill="#38cbf0">MİMARLIK &amp; İNŞAAT A.Ş.</text>
+    <text x="0" y="78" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="500" letter-spacing="1.5" fill="#cccccc">KENTSEL DÖNÜŞÜM &amp; MÜHENDİSLİK</text>
   </g>
 </svg>
