@@ -440,4 +440,37 @@ document.addEventListener('DOMContentLoaded', () => {
         animatedElements.forEach(el => el.classList.add('is-visible'));
     }
 
+    /* ==========================================================================
+       9. Projeler Sayfası Kategori & Proje Filtreleme
+       ========================================================================== */
+    const archiveFilterBtns = document.querySelectorAll('.projeler-archive__filter-btn');
+    const archiveCards = document.querySelectorAll('.proje-card');
+
+    if (archiveFilterBtns.length > 0 && archiveCards.length > 0) {
+        const applyProjectFilter = (filterVal) => {
+            archiveFilterBtns.forEach(b => {
+                b.classList.toggle('is-active', b.getAttribute('data-filter') === filterVal);
+            });
+            archiveCards.forEach(card => {
+                const status = card.getAttribute('data-status');
+                const projectKey = card.getAttribute('data-project');
+                const show = (filterVal === 'all') || (status === filterVal) || (projectKey === filterVal);
+                card.classList.toggle('is-hidden', !show);
+            });
+        };
+
+        archiveFilterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                applyProjectFilter(btn.getAttribute('data-filter'));
+            });
+        });
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialFilter = urlParams.get('filter');
+        if (initialFilter) {
+            applyProjectFilter(initialFilter);
+        }
+    }
+
 });
+
