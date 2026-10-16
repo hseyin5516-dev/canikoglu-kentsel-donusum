@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             }
 
-            modalContactBtn.href = `https://wa.me/905320000000?text=${encodeURIComponent('Merhaba, ' + data.title + ' projeniz hakkında bilgi almak istiyorum.')}`;
+            modalContactBtn.href = `https://wa.me/905418723712?text=${encodeURIComponent('Merhaba, ' + data.title + ' projeniz hakkında bilgi almak istiyorum.')}`;
 
             projectModal.classList.add('is-active');
             document.body.style.overflow = 'hidden';
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `🏢 Konu: ${topic}\n` +
                 `📝 Mesaj: ${message}`;
 
-            window.open(`https://wa.me/905320000000?text=${encodeURIComponent(text)}`, '_blank');
+            window.open(`https://wa.me/905418723712?text=${encodeURIComponent(text)}`, '_blank');
             contactForm.reset();
             alert('Talebiniz alınmıştır! WhatsApp üzerinden yetkili mimarımıza aktarılıyorsunuz.');
         });
