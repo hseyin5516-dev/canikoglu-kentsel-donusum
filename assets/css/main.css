@@ -450,6 +450,30 @@ ul, ol {
     }
 }
 
+@media (max-width: 575px) {
+    .main-header {
+        height: 76px;
+    }
+
+    .main-header__container {
+        padding: 0 18px;
+    }
+
+    .main-header__logo img {
+        height: 42px;
+        max-width: 215px;
+    }
+
+    .site-header.is-sticky .main-header {
+        height: 66px;
+    }
+
+    .site-header.is-sticky .main-header__logo img {
+        height: 38px;
+        max-width: 195px;
+    }
+}
+
 /* ==========================================================================
    Site Footer (Ekşioğlu Life Matching Style)
    ========================================================================== */

@@ -254,6 +254,95 @@
     border-radius: 6px;
 }
 
+@media (max-width: 991px) {
+    .hero-slider {
+        height: 680px;
+    }
+
+    .hero-slider__content {
+        padding: 110px 70px 70px 70px;
+    }
+
+    .hero-slider__tag {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .hero-slider__title {
+        font-size: 42px;
+        line-height: 46px;
+        margin-bottom: 14px;
+    }
+
+    .hero-slider__slogan {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-slider {
+        height: 620px;
+        min-height: 560px;
+    }
+
+    .hero-slider__overlay {
+        background: linear-gradient(180deg, rgba(16, 24, 40, 0.9) 0%, rgba(16, 24, 40, 0.72) 50%, rgba(16, 24, 40, 0.9) 100%);
+    }
+
+    .hero-slider__content {
+        padding: 110px 24px 68px 24px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero-slider__tag {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 8px;
+    }
+
+    .hero-slider__title {
+        font-size: 31px;
+        line-height: 35px;
+        letter-spacing: 0.5px;
+        margin-bottom: 12px;
+        max-width: 100%;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .hero-slider__slogan {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 22px;
+        max-width: 100%;
+    }
+
+    .hero-slider__actions {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hero-slider__button {
+        padding: 12px 20px;
+        font-size: 13px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-slider__nav {
+        display: none;
+    }
+
+    .hero-slider__dots {
+        bottom: 22px;
+    }
+}
+
 /* ==========================================================================
    2. Alt Hero 3-Column Strip (Ekşioğlu Life Matching)
    ========================================================================== */
