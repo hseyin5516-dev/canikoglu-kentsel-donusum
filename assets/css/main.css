@@ -1296,20 +1296,20 @@ ul, ol {
 }
 
 .proje-card {
-    background: #fff;
+    background: #1f2937;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
     width: 100%;
     max-width: 410px;
-    height: 460px;
+    height: 430px;
     cursor: pointer;
 }
 
 .proje-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-8px);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
 }
 
 .proje-card.is-hidden {
@@ -1329,7 +1329,7 @@ ul, ol {
     position: absolute;
     inset: 0;
     overflow: hidden;
-    background: #f0f0f0;
+    background: #111827;
 }
 
 .proje-card__image img {
@@ -1340,7 +1340,7 @@ ul, ol {
 }
 
 .proje-card:hover .proje-card__image img {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 .proje-card__badge {
@@ -1360,6 +1360,7 @@ ul, ol {
 
 .proje-card__badge--gold {
     background: var(--color-gold);
+    color: #0b0f19;
 }
 
 .proje-card__content {
@@ -1368,14 +1369,20 @@ ul, ol {
     left: 0;
     right: 0;
     padding: 28px 24px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.45) 65%, transparent 100%);
+    background: linear-gradient(to top, rgba(16, 24, 40, 0.95) 0%, rgba(16, 24, 40, 0.65) 65%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
 }
 
 .proje-card__meta {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--color-primary);
     display: block;
-    margin-bottom: 4px;
 }
 
 .proje-card__title {
@@ -1389,8 +1396,29 @@ ul, ol {
     transition: color 0.2s ease;
 }
 
-.proje-card:hover .proje-card__title {
-    color: var(--color-primary);
+.proje-card__desc {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #d1d5db;
+    margin: 0 0 6px;
+}
+
+.proje-card__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.proje-card:hover .proje-card__btn {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 /* ==========================================================================
@@ -1399,7 +1427,7 @@ ul, ol {
 .blog-archive {
     padding-top: 100px;
     padding-bottom: 80px;
-    background: #f9fafb;
+    background: #f8f9fa;
     min-height: 60vh;
 }
 
@@ -1408,26 +1436,35 @@ ul, ol {
     margin: 0 auto;
     padding: 48px 24px 0;
     display: grid;
-    grid-template-columns: 1fr 320px;
-    gap: 48px;
+    grid-template-columns: 1fr 340px;
+    gap: 44px;
     align-items: start;
 }
 
 .blog-archive__header {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
+}
+
+.blog-archive__subtitle {
+    font-family: var(--font-script);
+    color: var(--color-primary);
+    font-size: 26px;
+    display: block;
+    margin-bottom: 4px;
 }
 
 .blog-archive__title {
     font-family: var(--font-heading);
-    font-size: 40px;
+    font-size: 46px;
     font-weight: 600;
     color: #1a1a1a;
     margin: 0 0 8px;
     letter-spacing: 0.5px;
+    line-height: 1.1;
 }
 
 .blog-archive__desc {
-    font-size: 16px;
+    font-size: 15px;
     color: #666;
     line-height: 1.6;
 }
@@ -1435,23 +1472,25 @@ ul, ol {
 .blog-archive__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+    gap: 26px;
 }
 
-.blog-card {
+.blog-archive .blog-card {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.blog-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+.blog-archive .blog-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
 }
 
-.blog-card__link {
+.blog-archive .blog-card__link {
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -1459,49 +1498,52 @@ ul, ol {
     height: 100%;
 }
 
-.blog-card__img {
-    aspect-ratio: 16 / 10;
+.blog-archive .blog-card__img {
+    height: 190px;
     overflow: hidden;
-    background: #e5e7eb;
+    background: #16213e;
+    position: relative;
 }
 
-.blog-card__img img {
+.blog-archive .blog-card__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
 
-.blog-card:hover .blog-card__img img {
+.blog-archive .blog-card:hover .blog-card__img img {
     transform: scale(1.05);
 }
 
-.blog-card__body {
+.blog-archive .blog-card__body {
     padding: 24px;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.blog-card__meta {
+.blog-archive .blog-card__meta {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
-    margin-bottom: 10px;
-    font-size: 13px;
-    color: #888;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #16213e;
+    font-weight: 700;
 }
 
-.blog-card__cat {
+.blog-archive .blog-card__cat {
     background: rgba(28, 168, 203, 0.12);
     color: var(--color-primary);
-    padding: 3px 10px;
+    padding: 4px 10px;
     border-radius: 4px;
     font-weight: 600;
 }
 
-.blog-card__title {
+.blog-archive .blog-card__title {
     font-family: var(--font-heading);
     font-size: 26px;
     font-weight: 600;
@@ -1512,11 +1554,11 @@ ul, ol {
     transition: color 0.2s;
 }
 
-.blog-card:hover .blog-card__title {
+.blog-archive .blog-card:hover .blog-card__title {
     color: var(--color-primary);
 }
 
-.blog-card__excerpt {
+.blog-archive .blog-card__excerpt {
     font-size: 14px;
     color: #666;
     line-height: 1.65;
@@ -1524,7 +1566,7 @@ ul, ol {
     flex: 1;
 }
 
-.blog-card__more {
+.blog-archive .blog-card__more {
     font-size: 14px;
     font-weight: 600;
     color: var(--color-primary);
@@ -1534,7 +1576,7 @@ ul, ol {
     transition: gap 0.2s;
 }
 
-.blog-card:hover .blog-card__more {
+.blog-archive .blog-card:hover .blog-card__more {
     gap: 8px;
 }
 
